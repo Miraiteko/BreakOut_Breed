@@ -1,0 +1,5 @@
+﻿
+concept_breed_power = {
+}
+concept_breed_power_ratio = {
+}

@@ -1,0 +1,81 @@
+﻿pm_base_bank = {
+	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_paper_add = 30 # 30
+			building_output_investment_management_add = 15 #100
+		}	
+		level_scaled = {
+			building_employment_clerks_add = 200
+			building_employment_capitalists_add = 100
+			building_employment_shopkeepers_add = 700
+		}
+		unscaled = {
+			building_shopkeepers_shares_add = 0.1
+			building_capitalists_shares_add = 1
+		}
+	}		
+	state_modifiers = {
+		workforce_scaled = {
+			state_capitalists_investment_pool_contribution_add = 10.01
+			state_political_strength_from_wealth_mult = 0.01
+		}	
+	}	
+}	
+pm_mutual_funds = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+	
+	unlocking_technologies = {
+		mutual_funds
+	}	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_paper_add = 35 # 30
+			building_output_investment_management_add = 30 #100
+		}	
+		level_scaled = {
+			building_employment_clerks_add = 400
+			building_employment_capitalists_add = 200
+			building_employment_shopkeepers_add = 400
+		}
+		unscaled = {
+			building_shopkeepers_shares_add = 0.1
+			building_capitalists_shares_add = 1
+		}
+	}		
+	state_modifiers = {
+		workforce_scaled = {
+			state_capitalists_investment_pool_contribution_add = 0.015
+			state_political_strength_from_wealth_mult = 0.015
+		}	
+	}	
+}	
+pm_modern_financial_instruments = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+		
+	unlocking_technologies = {
+		modern_financial_instruments
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_telephones_add = 15 #70
+			building_output_investment_management_add = 50 #100
+		}	
+		level_scaled = {
+			building_employment_clerks_add = 600
+			building_employment_capitalists_add = 300
+			building_employment_shopkeepers_add = 100
+		}
+		unscaled = {
+			building_shopkeepers_shares_add = 0.1
+			building_capitalists_shares_add = 1
+		}
+	}		
+	state_modifiers = {
+		workforce_scaled = {
+			state_capitalists_investment_pool_contribution_add = 0.02
+			state_political_strength_from_wealth_mult = 0.02
+		}	
+	}	
+}	

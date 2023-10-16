@@ -1,0 +1,11 @@
+﻿on_monthly_pulse_country = {
+	on_actions = {
+		breakout_on_monthly_pulse_country
+	}
+}
+breakout_on_monthly_pulse_country = {
+	effect = {
+		#出生抚育者比例结算
+		breeders_ratio_monthly_check = yes
+	}
+}

@@ -1,0 +1,25 @@
+﻿#抚育
+breed = {
+	texture = "gfx/interface/icons/goods_icons/breed.dds"
+	cost = 50
+	category = staple
+	tradeable = no
+	
+	prestige_factor = 5
+	
+	obsession_chance = 1.0
+	
+	consumption_tax_cost = 100
+}
+investment_management = {
+	texture = "gfx/interface/icons/goods_icons/investment_management.dds"
+	cost = 160
+	category = luxury
+	tradeable = yes
+	
+	prestige_factor = 5
+	
+	obsession_chance = 1.0
+	
+	consumption_tax_cost = 1000
+}

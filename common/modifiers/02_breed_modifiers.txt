@@ -1,0 +1,29 @@
+﻿#生育率
+breed_ratio_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_positive.dds
+	state_birth_rate_mult = 1
+	state_working_adult_ratio_add = -0.15
+}
+
+#受教育机会
+base_education_access_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_education_access_add = 1.00
+}
+
+low_pop_state = {
+	state_migration_pull_mult = 1.0
+}
+
+high_pop_state = {
+	state_migration_pull_mult = -0.5
+}
+insufficient_tax_capacity = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	state_birth_rate_mult = -1
+	state_working_adult_ratio_add = 0.2
+}
+malnourishment = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	state_birth_rate_mult = -0.01	# per level below equilibrium
+}

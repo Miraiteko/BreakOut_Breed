@@ -1,0 +1,54 @@
+﻿#商品吞吐
+building_output_investment_management_add = {
+	good = yes
+	percent = no
+}
+building_input_investment_management_add = {
+	good = no
+	percent = no
+}
+building_output_breed_add = {
+	good = yes
+	percent = no
+}
+building_input_breed_add = {
+	good = no
+	percent = no
+}
+building_input_services_add = {
+	good = no
+	percent = no
+}
+
+
+#劳动力
+building_employment_breeders_add = {
+	good = no
+	percent = no
+}
+building_employment_laborers_mult = {
+	good = no
+	percent = yes
+}
+building_employment_machinists_mult = {
+	good = no
+	percent = yes
+}
+building_employment_engineers_mult = {
+	good = no
+	percent = yes
+}
+
+#死亡率
+building_breeders_mortality_mult = {
+	good = no
+	percent = yes
+}
+building_breeders_birthrate_mult = {
+	good = yes
+	percent = yes
+}
+building_capitalists_investment_pool_contribution_add = {
+	good = yes
+	percent = yes
+}

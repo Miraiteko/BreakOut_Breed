@@ -1,0 +1,17 @@
+﻿l_simp_chinese:
+
+ #金融相关
+ investment_management:"投资服务"
+ modifier_building_output_investment_management_add:"每级@investment_management!投资服务产出"
+ modifier_building_output_investment_management_add_desc:"建筑产出的@investment_management!投资服务数量"
+ modifier_building_input_investment_management_add:"每级@investment_management!投资服务投入"
+ modifier_building_input_investment_management_add_desc:"建筑投入的@investment_management!投资服务数量"
+ 
+ bank:"银行"
+ pmg_bank:"银行业务"
+ pm_base_bank:"古典银行业"
+ pm_mutual_funds:"共同基金"
+ pm_modern_financial_instruments:"现代金融工具"
+ modifier_building_capitalists_investment_pool_contribution_add:"$capitalists$[concept_investment_pool]贡献"
+ modifier_building_capitalists_investment_pool_contribution_add_desc:"$capitalists$会将多少收益用于投资"
+ 

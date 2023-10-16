@@ -1,0 +1,18 @@
+texticon = {
+	icon = breed
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/breed.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = investment_management
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/investment_management.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}

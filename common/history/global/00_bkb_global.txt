@@ -1,0 +1,57 @@
+﻿# This is executed last among all history
+GLOBAL = {
+	every_state = {
+		if = {
+			limit = {
+				total_urbanization > 1000
+			}
+			create_building={
+				building="breed_center"
+				level = 12
+				reserves=1
+			}
+			if = {
+				limit = {
+					owner ?= {
+						has_technology_researched = banking
+					}
+				}
+				create_building={
+					building="bank"
+					level = 1
+					reserves=1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				total_urbanization > 500
+			}
+			create_building={
+				building="breed_center"
+				level = 8
+				reserves=1
+			}
+		}
+		else_if = {
+			limit = {
+				total_urbanization > 200
+			}
+			create_building={
+				building="breed_center"
+				level = 3
+				reserves=1
+			}
+		}
+		else_if = {
+			limit = {
+				total_urbanization > 100
+			}
+			create_building={
+				building="breed_center"
+				level = 1
+				reserves=1
+			}
+		}
+	}
+}

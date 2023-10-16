@@ -1,0 +1,8 @@
+﻿pmg_bank = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_base_bank
+		pm_mutual_funds
+		pm_modern_financial_instruments
+	}
+}
