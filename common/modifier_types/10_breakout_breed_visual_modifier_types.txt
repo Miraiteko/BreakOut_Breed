@@ -13,23 +13,11 @@ state_breed_power_add = {
 	percent = no
 	num_decimals = 0
 }
-state_max_breeders_ratio_add = {
-	good = yes
-	percent = yes
-}
-building_production_exp_decay_add = {
+state_min_breeders_ratio_add = {
 	good = no
 	percent = yes
 }
-building_production_exp_over_cap_bonus_add = {
-	good = yes
-	percent = yes
-}
-building_production_exp_cap_add = {
-	good = yes
-	percent = yes
-}
-building_production_exp_growth_add = {
+state_max_breeders_ratio_add = {
 	good = yes
 	percent = yes
 }

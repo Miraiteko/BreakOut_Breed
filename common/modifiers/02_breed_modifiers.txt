@@ -1,9 +1,15 @@
 ﻿#生育率
-breed_ratio_modifier = {
+breed_ratio_bonus_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_positive.dds
 	state_birth_rate_mult = 1
-	state_working_adult_ratio_add = -0.2
+	state_working_adult_ratio_add = -0.15
 }
+breed_ratio_penalty_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	state_birth_rate_mult = -1
+	state_working_adult_ratio_add = 0.15
+}
+
 
 #受教育机会
 base_education_access_modifier = {

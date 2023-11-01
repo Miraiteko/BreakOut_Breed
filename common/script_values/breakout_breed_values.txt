@@ -1,8 +1,13 @@
-﻿production_exp = {
-    value = 0
-    add = modifier:state_breed_power_add
-    subtract = {
-        value = state_population
-        multiply = 1000
-    }
+﻿breed_ratio = {
+    value =  scope:checked_state.var:state_breed_power
+    multiply = 1000
+    divide = state_population
+}
+breed_ratio_bonus = {
+    value =  breed_ratio
+    subtract = 1
+}
+breed_ratio_penalty = {
+    value =  1
+    subtract = breed_ratio
 }

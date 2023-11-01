@@ -54,5 +54,4 @@ GLOBAL = {
 			}
 		}
 	}
-	breeders_ratio_monthly_check = yes
 }

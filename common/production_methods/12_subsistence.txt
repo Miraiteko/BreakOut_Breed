@@ -63,6 +63,7 @@ pm_serfdom_no = {
 		}			
 		workforce_scaled = {
 			building_output_breed_add = 0.5
+			building_breed_power_add = 20
 		}				
 		unscaled = {
 			building_subsistence_output_add = 4
@@ -70,7 +71,6 @@ pm_serfdom_no = {
 	}
 	state_modifiers = {
 		workforce_scaled = {
-			state_breed_power_add = 20
 		}	
 	}
 }
@@ -90,6 +90,7 @@ pm_serfdom = {
 		workforce_scaled = {
 			building_output_grain_add = 0.5 # 10
 			building_output_breed_add = 0.7
+			building_breed_power_add = 28
 		}
 		level_scaled = {
 			building_employment_peasants_add = 5000
@@ -102,7 +103,6 @@ pm_serfdom = {
 	}
 	state_modifiers = {
 		workforce_scaled = {
-			state_breed_power_add = 28
 		}	
 	}
 }		
@@ -171,6 +171,7 @@ pm_serfdom_building_subsistence_orchards = {
 		workforce_scaled = {
 			building_output_fruit_add = 0.33 # 10
 			building_output_breed_add = 0.7
+			building_breed_power_add = 28
 		}
 		level_scaled = {
 			building_employment_peasants_add = 5000
@@ -183,7 +184,6 @@ pm_serfdom_building_subsistence_orchards = {
 	}
 	state_modifiers = {
 		workforce_scaled = {
-			state_breed_power_add = 28
 		}	
 	}
 }			
@@ -252,6 +252,7 @@ pm_serfdom_building_subsistence_pastures = {
 		workforce_scaled = {
 			building_output_breed_add = 0.7
 			building_output_meat_add = 0.33 # 10
+			building_breed_power_add = 28
 		}
 		level_scaled = {
 			building_employment_peasants_add = 5000
@@ -263,7 +264,6 @@ pm_serfdom_building_subsistence_pastures = {
 	}
 	state_modifiers = {
 		workforce_scaled = {
-			state_breed_power_add = 28
 		}	
 	}
 }
@@ -332,6 +332,8 @@ pm_serfdom_building_subsistence_fishing_villages = {
 		workforce_scaled = {
 			building_output_fish_add = 0.5 # 10
 			building_output_meat_add = 0.33 # 10
+			building_output_breed_add = 0.7
+			building_breed_power_add = 28
 		}
 		level_scaled = {
 			building_employment_peasants_add = 5000
@@ -343,7 +345,6 @@ pm_serfdom_building_subsistence_fishing_villages = {
 	}
 	state_modifiers = {
 		workforce_scaled = {
-			state_breed_power_add = 28
 		}	
 	}
 }		
@@ -358,6 +359,7 @@ default_building_subsistence_rice_paddies = {
 			building_output_wood_add = 0.75 # 30
 			building_output_services_add = 1 # 30
 			building_output_breed_add = 0.5
+			building_breed_power_add = 20
 		}
 
 		level_scaled = {
@@ -367,7 +369,6 @@ default_building_subsistence_rice_paddies = {
 	}
 	state_modifiers = {
 		workforce_scaled = {
-			state_breed_power_add = 20
 		}	
 	}
 }
@@ -415,8 +416,9 @@ pm_serfdom_building_subsistence_rice_paddies = {
 	}	
 	building_modifiers = {
 		workforce_scaled = {
-			building_output_breed_add = 0.5
+			building_output_breed_add = 1
 			building_output_grain_add = 1 # 20
+			building_breed_power_add = 40
 		}
 		level_scaled = {
 			building_employment_peasants_add = 10000
@@ -429,7 +431,6 @@ pm_serfdom_building_subsistence_rice_paddies = {
 	}
 	state_modifiers = {
 		workforce_scaled = {
-			state_breed_power_add = 40
 		}	
 	}
 }

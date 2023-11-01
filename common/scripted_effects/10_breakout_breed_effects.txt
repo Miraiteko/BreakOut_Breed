@@ -76,15 +76,55 @@ breeders_ratio_monthly_check = {
 		}
 	}
 
-	#计算各地区生育力
-	every_scope_state = {
-		if = {
-			limit = { has_modifier = breed_ratio_modifier }
-			remove_modifier = breed_ratio_modifier
+}
+
+#抚育能力结算
+breed_power_monthly_check = {
+	save_scope_as = checked_state
+	if = {
+		limit = { has_modifier = breed_ratio_bonus_modifier }
+		remove_modifier = breed_ratio_bonus_modifier
+	} 
+	if = {
+		limit = { has_modifier = breed_ratio_penalty_modifier }
+		remove_modifier = breed_ratio_penalty_modifier
+	} 
+	set_variable = {
+		name = state_breed_power
+		value = 0
+	}
+	every_scope_building = {
+		state = {
+			change_variable = {
+				name = state_breed_power
+				add = prev.modifier:building_breed_power_add
+			}
 		}
-		breed_ratio_modifier = {
-			name = breed_ratio_modifier
-			multiplier = breed_ratio
+	}
+	set_variable = {
+		name = state_breed_ratio
+		value = breed_ratio
+	}
+	set_variable = {
+		name = state_breed_ratio_bonus
+		value = breed_ratio_bonus
+	}
+	set_variable = {
+		name = state_breed_ratio_penalty
+		value = breed_ratio_penalty
+	}
+	if = {
+		limit = { var:state_breed_ratio < 1 }
+		add_modifier = {
+			name = breed_ratio_penalty_modifier
+			multiplier = var:state_breed_ratio_penalty
+		}
+	}
+	else_if = {
+		limit = { var:state_breed_ratio > 1 }
+		add_modifier = {
+			name = breed_ratio_bonus_modifier
+			multiplier = var:state_breed_ratio_bonus
 		}
 	}
 }

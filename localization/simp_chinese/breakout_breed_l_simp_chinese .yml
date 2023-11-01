@@ -81,10 +81,12 @@
  modifier_building_breed_power_add_desc:"该建筑为所在地区提供的[concept_breed_power]"
  modifier_state_breed_power_add:"@breed!劳动力再生产"
  modifier_state_breed_power_add_desc:"该建筑为所在地区提供的[concept_breed_power]"
- concept_breed_power_ratio:"@breed!劳动力再生产效率"
- concept_breed_power_ratio_desc:"劳动力再生产效率是该地区[concept_breed_power]与总人口数量的比值。\n\n劳动力再生产效率超过#v 1#!时，则出生率提高；同时，由于人群中的儿童比例上升，劳动力比例将有所下降。\n劳动力再生产效率不足#v 1#!时，则出生率下降；同时，由于人群中的儿童比例下降，劳动力比例将有所提升。"
+ concept_breed_power_ratio:"@breed!抚育效率"
+ concept_breed_power_ratio_desc:"抚育效率是该地区[concept_breed_power]与总人口数量（每千人）的比值。\n\n抚育效率超过#v 1#!时，则出生率提高；同时，由于人群中的儿童比例上升，劳动力比例将有所下降。\n抚育效率不足#v 1#!时，则出生率下降；同时，由于人群中的儿童比例下降，劳动力比例将有所提升。"
  
  breed_ratio_modifier:"[concept_breed_power_ratio]"
+ breed_ratio_bonus_modifier:"[concept_breed_power_ratio]较高"
+ breed_ratio_penalty_modifier:"[concept_breed_power_ratio]较低"
  
  breed_modifier:"[concept_breed_power_ratio]"
  pmg_breed_modifier:"[concept_breed_power_ratio]"

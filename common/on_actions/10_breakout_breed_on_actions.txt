@@ -1,11 +1,22 @@
 ﻿on_monthly_pulse_country = {
 	on_actions = {
-		breakout_on_monthly_pulse_country
+		breakout_breed_on_monthly_pulse_country
 	}
 }
-breakout_on_monthly_pulse_country = {
+breakout_breed_on_monthly_pulse_country = {
 	effect = {
 		#出生抚育者比例结算
 		breeders_ratio_monthly_check = yes
+	}
+}
+on_monthly_pulse_state = {
+	on_actions = {
+		breakout_breed_on_monthly_pulse_state
+	}
+}
+breakout_breed_on_monthly_pulse_state = {
+	effect = {
+		#抚育能力结算
+		breed_power_monthly_check = yes
 	}
 }
