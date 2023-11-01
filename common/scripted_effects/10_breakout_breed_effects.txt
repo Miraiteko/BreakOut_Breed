@@ -75,4 +75,16 @@ breeders_ratio_monthly_check = {
 			}
 		}
 	}
+
+	#计算各地区生育力
+	every_scope_state = {
+		if = {
+			limit = { has_modifier = breed_ratio_modifier }
+			remove_modifier = breed_ratio_modifier
+		}
+		breed_ratio_modifier = {
+			name = breed_ratio_modifier
+			multiplier = breed_ratio
+		}
+	}
 }

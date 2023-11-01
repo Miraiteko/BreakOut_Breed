@@ -70,7 +70,7 @@ pm_serfdom_no = {
 	}
 	state_modifiers = {
 		workforce_scaled = {
-			state_breed_power_add = 2
+			state_breed_power_add = 20
 		}	
 	}
 }
@@ -102,7 +102,7 @@ pm_serfdom = {
 	}
 	state_modifiers = {
 		workforce_scaled = {
-			state_breed_power_add = 2.8
+			state_breed_power_add = 28
 		}	
 	}
 }		
@@ -183,7 +183,7 @@ pm_serfdom_building_subsistence_orchards = {
 	}
 	state_modifiers = {
 		workforce_scaled = {
-			state_breed_power_add = 2.8
+			state_breed_power_add = 28
 		}	
 	}
 }			
@@ -263,7 +263,7 @@ pm_serfdom_building_subsistence_pastures = {
 	}
 	state_modifiers = {
 		workforce_scaled = {
-			state_breed_power_add = 2.8
+			state_breed_power_add = 28
 		}	
 	}
 }
@@ -343,7 +343,7 @@ pm_serfdom_building_subsistence_fishing_villages = {
 	}
 	state_modifiers = {
 		workforce_scaled = {
-			state_breed_power_add = 2.8
+			state_breed_power_add = 28
 		}	
 	}
 }		
@@ -367,7 +367,7 @@ default_building_subsistence_rice_paddies = {
 	}
 	state_modifiers = {
 		workforce_scaled = {
-			state_breed_power_add = 2
+			state_breed_power_add = 20
 		}	
 	}
 }
@@ -429,7 +429,7 @@ pm_serfdom_building_subsistence_rice_paddies = {
 	}
 	state_modifiers = {
 		workforce_scaled = {
-			state_breed_power_add = 4
+			state_breed_power_add = 40
 		}	
 	}
 }

@@ -1,0 +1,8 @@
+﻿production_exp = {
+    value = 0
+    add = modifier:state_breed_power_add
+    subtract = {
+        value = state_population
+        multiply = 1000
+    }
+}
