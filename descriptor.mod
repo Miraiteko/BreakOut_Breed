@@ -6,6 +6,6 @@ tags={
 	"Gameplay" 
 	"Total Conversion"
 }
-name="劳与资的再生产"
+name="生生不息"
 supported_version="0.*.*"
 path="D:/Documents/Paradox Interactive/Victoria 3/mod/BreakOut_Breed"

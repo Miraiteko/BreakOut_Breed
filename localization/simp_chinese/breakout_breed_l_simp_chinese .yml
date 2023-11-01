@@ -3,8 +3,7 @@
  breeders:"$breeders_only_icon$ $breeders_no_icon$"
  breeders_only_icon:"@soldiers!"
  breeders_no_icon:"抚育者"
- breeders_desc:"抚育者是指那些为了下一代的成长而努力劳作的人，主要包括了孕妇产妇、家庭主妇、保姆看护以及幼儿教师。\n\n在原版#v 维多利亚3#!游戏中，这些人群被视为受抚养者。但是在#v 大秦东出#!之中，这些人群被视作重要的社会劳动者，因此单独划分为一个新的一个职业。"
- #breeders_desc:"抚育者是指那些为了下一代的成长而努力劳作的人，包括了孕妇产妇、家庭主妇、保姆看护、幼儿教师等人群。一些传统观念认为这些人并不算是劳动者，而本模组认为这些人是重要的劳动者，从事的是劳动力再生产的重要社会工作。\n很多人是在从事其他工作的时候兼职这份工作的，但是在本模组之中，我们抽象地将这部分工作从兼职者身上拆分出来，作为单独的一个职业。例如：假如一位劳工花费一半的精力在照顾家庭上，我们将其视为0.5位劳工和0.5位抚育者。\n\n抚育者在一个地区的人口占比越高，该地区的出生率就越高。"
+ breeders_desc:"抚育者是指那些为了下一代的成长而努力劳作的人，主要包括了孕妇产妇、家庭主妇、保姆看护以及幼儿教师。\n\n在原版#v 维多利亚3#!游戏中，这些人群被视为受抚养者。但是在#breakout_breed 生生不息#!之中，这些人群被视作重要的社会劳动者，因此单独划分为一个新的一个职业。"
  BREEDERS_QUALIFICATIONS_DESC:"任何人群都能成为#v $breeders$#!。当#v $breeders$#!人口缺少的时候更容易获得资质。\n[GetLawGroup('lawgroup_rights_of_women').GetName]法律限制了#v $breeders$#!获得其他职业资质的可能性。"
  BK_PEASANTS_QUALIFICATIONS_DESC:"除了受到[GetLawGroup('lawgroup_rights_of_women').GetName]限制的$breeders$之外，任何人群都能成为#v $peasants$#!。\n[concept_literacy]较低的人群更乐意成为#v $peasants$#!。"
  BK_LABORERS_QUALIFICATIONS_DESC:"除了受到[GetLawGroup('lawgroup_rights_of_women').GetName]限制的$breeders$之外，任何人群都能成为#v $laborers$#!。\n[concept_wealth]较高的人群不愿意成为#v $laborers$#!。"
@@ -76,17 +75,17 @@
  
  #出生率修正相关
  concept_breed_power:"@breed!抚育能力"
- concept_breed_power_desc:"抚育能力表示了该地区能够培养的下一代劳动者的规模。自给建筑和居民区可以提供劳动力再生产能力。\n抚育能力不足时，该地区的出生率将下降；同时由于儿童减少，劳动力比例将有所提升。"
- modifier_building_breed_power_add:"@breed!劳动力再生产"
+ concept_breed_power_desc:"抚育能力表示了该地区能够培养的下一代劳动者的规模。自给建筑和居民区可以提供地区抚育能力。\n抚育能力不足时，该地区的出生率将下降；同时由于儿童减少，劳动力比例将有所提升。"
+ modifier_building_breed_power_add:"@breed!地区抚育能力"
  modifier_building_breed_power_add_desc:"该建筑为所在地区提供的[concept_breed_power]"
- modifier_state_breed_power_add:"@breed!劳动力再生产"
+ modifier_state_breed_power_add:"@breed!地区抚育能力"
  modifier_state_breed_power_add_desc:"该建筑为所在地区提供的[concept_breed_power]"
  concept_breed_power_ratio:"@breed!抚育效率"
  concept_breed_power_ratio_desc:"抚育效率是该地区[concept_breed_power]与总人口数量（每千人）的比值。\n\n抚育效率超过#v 1#!时，则出生率提高；同时，由于人群中的儿童比例上升，劳动力比例将有所下降。\n抚育效率不足#v 1#!时，则出生率下降；同时，由于人群中的儿童比例下降，劳动力比例将有所提升。"
  
  breed_ratio_modifier:"[concept_breed_power_ratio]"
- breed_ratio_bonus_modifier:"[concept_breed_power_ratio]较高"
- breed_ratio_penalty_modifier:"[concept_breed_power_ratio]较低"
+ breed_ratio_bonus_modifier:"[concept_breed_power_ratio]#p 较高#!"
+ breed_ratio_penalty_modifier:"[concept_breed_power_ratio]#n 较低#!"
  
  breed_modifier:"[concept_breed_power_ratio]"
  pmg_breed_modifier:"[concept_breed_power_ratio]"

@@ -1,33 +1,4 @@
 ﻿l_simp_chinese:
- #资源枯竭相关
- building_coal_mine_discovered_resource:"煤矿"
- building_gold_mine_discovered_resource:"金矿"
- building_whaling_station_discovered_resource:"捕鲸"
- building_logging_camp_discovered_resource:"木材"
-
- coal_mining_deplete_modifier:"[concept_coal_mining_deplete]"
- coal_mining_deplete_modifier_desc:"$concept_coal_mining_deplete_desc"
- oil_extraction_deplete_modifier:"[concept_oil_extraction_deplete]"
- oil_extraction_deplete_modifier_desc:"$concept_oil_extraction_deplete_desc$"
- modifier_building_output_coal_mult:"建筑@coal!煤炭产出"
- modifier_building_output_coal_mult_desc:"对建筑产出的@coal!煤炭数量的增益或惩罚"
- modifier_building_output_crude_oil_mult:"建筑@crude_oil!原油产出"
- modifier_building_output_crude_oil_mult_desc:"对建筑产出的@crude_oil!原油数量的增益或惩罚"
- crude_oil:"原油"
- modifier_building_output_crude_oil_add:"每级@crude_oil!$crude_oil$产出"
- modifier_building_output_crude_oil_add_desc:"建筑产出的@crude_oil!$crude_oil$数量"
- modifier_building_input_crude_oil_add:"每级@crude_oil!$crude_oil$投入"
- modifier_building_input_crude_oil_add_desc:"建筑投入的@crude_oil!$crude_oil$数量"
- fuel:"燃料"
- modifier_building_output_fuel_add:"每级@fuel!$fuel$产出"
- modifier_building_output_fuel_add_desc:"建筑产出的@fuel!$fuel$数量"
- modifier_building_input_fuel_add:"每级@fuel!$fuel$投入"
- modifier_building_input_fuel_add_desc:"建筑投入的@fuel!$fuel$数量"
-
- concept_coal_mining_deplete:"@coal!开采深层煤矿"
- concept_coal_mining_deplete_desc:"浅层的煤矿会被逐渐采空，导致开采者不得不深入地壳深处开采煤矿。而这些深层煤矿的开采难度更大，并且含煤量更低，从而导致生产效率的下降。\n\n通过研究[concept_technology]来解锁更高效的[concept_production_method]，才能让煤矿在开采这些深层矿石的时候依然保持盈利。"
- concept_oil_extraction_deplete:"@oil!开采页岩油"
- concept_oil_extraction_deplete_desc:"富油层的石油会被逐渐采空，导致开采者不得不钻开页岩来获取更多的石油。而这些页岩中的石油开采难度更大，从而导致生产效率的下降。\n\n通过研究[concept_technology]来解锁更高效的[concept_production_method]，才能让油井能够在开采这些页岩油的时候依然保持盈利。"
 
  #资源循环相关
  hydroponics_farm:"水培农场"
