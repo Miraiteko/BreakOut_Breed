@@ -1,7 +1,22 @@
-pmg_breed_methods = {
-	production_methods = {
+pmg_village_house_methods = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_serfdom_breed
 		pm_tradition_breed
+	}
+}
+pmg_village_house_ownership = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_privately_owned_building_village_house
+		pm_government_run_building_village_house
+		pm_worker_cooperative_building_village_house
+	}
+}
+pmg_breed_center_methods = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_tradition_breed_breed_center
 		pm_elite_breed
 	}
 }

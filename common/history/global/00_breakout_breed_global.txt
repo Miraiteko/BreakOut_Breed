@@ -2,13 +2,84 @@
 GLOBAL = {
 	every_state = {
 		if = {
+			limit = { state_population > 30000000 }
+			add_modifier = {
+				name = breakout_breed_initial
+				multiplier = 2000
+				days = 3
+				is_decaying = yes
+			}
+		}
+		if = {
+			limit = { state_population > 10000000 }
+			add_modifier = {
+				name = breakout_breed_initial
+				multiplier = 700
+				days = 3
+				is_decaying = yes
+			}
+		}
+		else_if = {
+			limit = { state_population > 3000000 }
+			add_modifier = {
+				name = breakout_breed_initial
+				multiplier = 200
+				days = 3
+				is_decaying = yes
+			}
+		}
+		else_if = {
+			limit = { state_population > 1000000 }
+			add_modifier = {
+				name = breakout_breed_initial
+				multiplier = 70
+				days = 3
+				is_decaying = yes
+			}
+		}
+		else_if = {
+			limit = { state_population > 300000 }
+			add_modifier = {
+				name = breakout_breed_initial
+				multiplier = 20
+				days = 3
+				is_decaying = yes
+			}
+		}
+		else_if = {
+			limit = { state_population > 100000 }
+			add_modifier = {
+				name = breakout_breed_initial
+				multiplier = 7
+				days = 3
+				is_decaying = yes
+			}
+		}
+		else_if = {
+			limit = { state_population > 30000 }
+			add_modifier = {
+				name = breakout_breed_initial
+				multiplier = 2
+				days = 3
+				is_decaying = yes
+			}
+		}
+		else = {
+			add_modifier = {
+				name = breakout_breed_initial
+				multiplier = 1
+				days = 3
+				is_decaying = yes
+			}
+		}
+		if = {
 			limit = {
 				total_urbanization > 1000
 			}
 			create_building={
 				building="breed_center"
-				level = 12
-				reserves=1
+				level = 15
+				reserves = 0
 			}
 			if = {
 				limit = {
@@ -19,7 +90,7 @@ GLOBAL = {
 				create_building={
 					building="bank"
 					level = 1
-					reserves=1
+					reserves = 0
 				}
 			}
 		}
@@ -27,10 +98,10 @@ GLOBAL = {
 			limit = {
 				total_urbanization > 500
 			}
-			create_building={
+			create_building = {
 				building="breed_center"
-				level = 8
-				reserves=1
+				level = 10
+				reserves =0
 			}
 		}
 		else_if = {
@@ -39,8 +110,8 @@ GLOBAL = {
 			}
 			create_building={
 				building="breed_center"
-				level = 3
-				reserves=1
+				level = 5
+				reserves = 0
 			}
 		}
 		else_if = {
@@ -49,8 +120,8 @@ GLOBAL = {
 			}
 			create_building={
 				building="breed_center"
-				level = 1
-				reserves=1
+				level = 2
+				reserves = 0
 			}
 		}
 	}

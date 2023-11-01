@@ -1,4 +1,10 @@
-﻿#生育率
+﻿#初始效果
+breakout_breed_initial = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_village_house_max_level_add = 1
+}
+
+#生育率
 breed_ratio_bonus_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_positive.dds
 	state_birth_rate_mult = 1

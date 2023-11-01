@@ -1,4 +1,5 @@
 ﻿l_simp_chinese:
+ breakout_breed_initial:"#breakout_breed 生生不息#!初始化效果"
  #抚育者相关
  breeders:"$breeders_only_icon$ $breeders_no_icon$"
  breeders_only_icon:"@soldiers!"
@@ -55,9 +56,25 @@
  modifier_building_output_services_mult_desc:"建筑产出的@services!服务数量"
  modifier_building_input_transportation_mult:"每级@transportation!运力投入"
  modifier_building_input_transportation_mult_desc:"建筑投入的@transportation!运力数量"
- breed_center:"居民区"
- pmg_breed_methods:"劳动力"
+
+ elite_breed:"优育"
+ modifier_building_output_elite_breed_add:"每级@elite_breed!$elite_breed$产出"
+ modifier_building_output_elite_breed_add_desc:"建筑产出的@elite_breed!$elite_breed$数量"
+ modifier_building_input_elite_breed_add:"每级@elite_breed!$elite_breed$投入"
+ modifier_building_input_elite_breed_add_desc:"建筑投入的@elite_breed!$elite_breed$数量"
+
+ village_house:"村居"
+ pmg_village_house_methods:"劳动力"
+ pm_serfdom_breed:"妇女压迫"
  pm_tradition_breed:"多子多福"
+ pmg_village_house_ownership:"所有制"
+ pm_privately_owned_building_village_house:"封建家族"
+ pm_government_run_building_village_house:"政府运营"
+ pm_worker_cooperative_building_village_house:"村民委员会"
+
+ breed_center:"社区"
+ pmg_breed_center_methods:"城镇家庭"
+ pm_tradition_breed_breed_center:"多子多福"
  pm_elite_breed:"优生优育"
  
  pmg_breed_center_space_use:"楼间空地"
@@ -71,11 +88,12 @@
  pm_government_run_building_breed_center:"政府运营"
  pm_worker_cooperative_building_breed_center:"居民委员会"
  
- 
+ modifier_state_village_house_max_level_add:"$village_house$最大等级"
+ modifier_state_village_house_max_level_add_desc:"对$village_house$建筑最大等级的增益或惩罚。"
  
  #出生率修正相关
  concept_breed_power:"@breed!抚育能力"
- concept_breed_power_desc:"抚育能力表示了该地区能够培养的下一代劳动者的规模。自给建筑和居民区可以提供地区抚育能力。\n抚育能力不足时，该地区的出生率将下降；同时由于儿童减少，劳动力比例将有所提升。"
+ concept_breed_power_desc:"抚育能力表示了该地区能够培养的下一代劳动者的规模。村居和社区可以提供地区抚育能力。\n抚育能力不足时，该地区的出生率将下降；同时由于儿童减少，劳动力比例将有所提升。"
  modifier_building_breed_power_add:"@breed!地区抚育能力"
  modifier_building_breed_power_add_desc:"该建筑为所在地区提供的[concept_breed_power]"
  modifier_state_breed_power_add:"@breed!地区抚育能力"
@@ -93,7 +111,7 @@
 
  #教育相关
  concept_base_education_access:"@breed!基础受教育机会"
- concept_base_education_access_desc:"这是新增劳动力的成长环境带来的[concept_education_access]。\n自给农场提供的基础受教育机会非常少，而配有学校设施的居民区会提供较多的基础受教育机会。\n如果同一个地区同时有多种劳动力来源的话，受教育机会将按照规模进行加权平均。"
+ concept_base_education_access_desc:"这是新增劳动力的成长环境带来的[concept_education_access]。\n自给农场提供的基础受教育机会非常少，而配有学校设施的社区会提供较多的基础受教育机会。\n如果同一个地区同时有多种劳动力来源的话，受教育机会将按照规模进行加权平均。"
  modifier_building_base_education_access_add:"@breed!基础受教育机会"
  modifier_building_base_education_access_add_desc:"该建筑产生的劳动力的[concept_base_education_access]"
  

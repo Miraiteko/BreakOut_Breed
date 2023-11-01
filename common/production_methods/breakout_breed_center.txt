@@ -1,19 +1,49 @@
 ﻿#基础方式
-pm_tradition_breed = {
-	texture = "gfx/interface/icons/production_method_icons/scholastic_education.dds"
-		
+pm_serfdom_breed = {
+	texture = "gfx/interface/icons/production_method_icons/serfdom.dds"
+	disallowing_laws = {
+		law_women_in_the_workplace
+		law_womens_suffrage
+	}
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_services_add = 2 #30
-			building_output_breed_add = 9 #50
-			building_breed_power_add = 300
+			building_output_breed_add = 10 #50
+			building_breed_power_add = 30
 			#building_production_exp_growth_add = 0.001
 		}	
 		level_scaled = {
-			building_employment_breeders_add = 7000
+			building_employment_breeders_add = 9000
+		}
+		unscaled = {
+			building_breeders_mortality_mult = 0.3
+		}
+	}		
+	state_modifiers = {
+		workforce_scaled = {
+		}	
+	}
+}
+pm_tradition_breed = {
+	texture = "gfx/interface/icons/production_method_icons/scholastic_education.dds"
+	disallowing_laws = {
+		law_serfdom
+		law_no_womens_rights
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_transportation_add = 1
+			building_input_services_add = 2 #30
+			building_output_breed_add = 10 #50
+			building_output_elite_breed_add = 5 #75
+			building_breed_power_add = 30
+			#building_production_exp_growth_add = 0.001
+		}	
+		level_scaled = {
+			building_employment_breeders_add = 9000
 		}
 		unscaled = {
 			#building_production_exp_cap_add = 0.2
+			building_breeders_mortality_mult = 0.1
 		}
 	}		
 	state_modifiers = {
@@ -22,25 +52,52 @@ pm_tradition_breed = {
 	}	
 }	
 
+pm_tradition_breed_breed_center = {
+	texture = "gfx/interface/icons/production_method_icons/scholastic_education.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_services_add = 2 #30
+			building_output_breed_add = 10 #50
+			building_output_elite_breed_add = 5 #75
+			building_breed_power_add = 30
+			#building_production_exp_growth_add = 0.001
+		}	
+		level_scaled = {
+			building_employment_breeders_add = 9000
+		}
+		unscaled = {
+			#building_production_exp_cap_add = 0.2
+			building_breeders_mortality_mult = 0.15
+		}
+	}		
+	state_modifiers = {
+		workforce_scaled = {
+		}	
+	}	
+}
+
 pm_elite_breed = {
 	texture = "gfx/interface/icons/production_method_icons/philosophy_dept.dds"
-	
+	disallowing_laws = {
+		law_no_womens_rights
+	}
 	unlocking_technologies = {
 		human_rights
 	}
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_paper_add = 1 #30
-			building_input_services_add = 4 #30
-			building_output_breed_add = 18 #50
-			building_breed_power_add = 360
+			building_input_services_add = 3 #30
+			building_output_breed_add = 10 #50
+			building_output_elite_breed_add = 15 #75
+			building_breed_power_add = 30
 			#building_production_exp_growth_add = 0.0015
 			
 		}	
 		level_scaled = {
 			building_employment_academics_add = 200
 			building_employment_clerks_add = 800
-			building_employment_breeders_add = 5000
+			building_employment_breeders_add = 8000
 		}
 		unscaled = {
 			#building_production_exp_cap_add = 0.4
@@ -114,6 +171,58 @@ pm_breed_center_parkinglot = {
 }
 
 #所有制
+pm_privately_owned_building_village_house = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	disallowing_laws = {
+		law_command_economy
+		law_council_republic
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			
+		}
+		level_scaled = {
+			building_employment_aristocrats_add = 100
+		}
+		unscaled = {
+			building_aristocrats_shares_add = 5 
+		}
+	}
+}
+pm_government_run_building_village_house = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+	
+	unlocking_laws = {
+		law_command_economy
+	}
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_bureaucrats_add = 100
+		}
+		unscaled = {
+			building_government_shares_add = 1
+		}
+	}
+}
+pm_worker_cooperative_building_village_house = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+
+	unlocking_laws = {
+		law_council_republic
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_breeders_add = 100
+		}
+		unscaled = {
+			building_workforce_shares_add = 1
+		}
+	}
+}
 pm_privately_owned_building_breed_center = {
 	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
 
@@ -127,8 +236,8 @@ pm_privately_owned_building_breed_center = {
 			
 		}
 		level_scaled = {
-			building_employment_aristocrats_add = 50
-			building_employment_shopkeepers_add = 50
+			building_employment_aristocrats_add = 25
+			building_employment_shopkeepers_add = 75
 		}
 		unscaled = {
 			building_aristocrats_shares_add = 5 
@@ -154,11 +263,11 @@ pm_publicly_traded_building_breed_center = {
 			
 		}
 		level_scaled = {
-			building_employment_capitalists_add = 50
-			building_employment_shopkeepers_add = 50
+			building_employment_capitalists_add = 25
+			building_employment_shopkeepers_add = 75
 		}
 		unscaled = {
-			building_capitalists_shares_add = 5
+			building_capitalists_shares_add = 10
 			building_shopkeepers_shares_add = 5 
 		}
 	}

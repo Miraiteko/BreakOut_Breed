@@ -1,0 +1,171 @@
+﻿pm_serfdom_no = {
+	texture = "gfx/interface/icons/production_method_icons/no_serfdom.dds"
+	unlocking_laws = {
+		law_tenant_farmers
+		law_commercialized_agriculture
+		law_homesteading
+		law_collectivized_agriculture
+	}
+	disallowing_laws = {
+		law_serfdom
+	}
+	
+	building_modifiers = {	
+		workforce_scaled = {
+			building_input_breed_add = 1
+		}
+		unscaled = {
+			building_subsistence_output_add = 4
+		}
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_village_house_max_level_add = 1
+		}
+	}
+}
+
+pm_serfdom = {
+	texture = "gfx/interface/icons/production_method_icons/serfdom.dds"
+	disallowing_laws = {
+		law_tenant_farmers
+		law_commercialized_agriculture
+		law_homesteading
+		law_collectivized_agriculture
+	}
+	unlocking_laws = {
+		law_serfdom
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_breed_add = 2
+			building_output_grain_add = 0.5 # 10
+		}
+
+		unscaled = {
+			building_subsistence_output_add = 3
+		}		
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_village_house_max_level_add = 1.5
+		}
+	}
+}		
+
+	
+pm_serfdom_building_subsistence_orchards = {
+	texture = "gfx/interface/icons/production_method_icons/serfdom.dds"
+	disallowing_laws = {
+		law_tenant_farmers
+		law_commercialized_agriculture
+		law_homesteading
+		law_collectivized_agriculture
+	}
+	unlocking_laws = {
+		law_serfdom
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_breed_add = 2
+			building_output_fruit_add = 0.33 # 10
+		}
+
+		unscaled = {
+			building_subsistence_output_add = 3
+		}			
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_village_house_max_level_add = 1.5
+		}
+	}
+}		
+
+
+
+
+pm_serfdom_building_subsistence_pastures = {
+	texture = "gfx/interface/icons/production_method_icons/serfdom.dds"
+	disallowing_laws = {
+		law_tenant_farmers
+		law_commercialized_agriculture
+		law_homesteading
+		law_collectivized_agriculture
+	}
+	unlocking_laws = {
+		law_serfdom
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_breed_add = 2
+			building_output_meat_add = 0.33 # 10
+		}
+
+		unscaled = {
+			building_subsistence_output_add = 3
+		}			
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_village_house_max_level_add = 1.5
+		}
+	}
+}
+
+pm_serfdom_building_subsistence_fishing_villages = {
+	texture = "gfx/interface/icons/production_method_icons/serfdom.dds"
+	disallowing_laws = {
+		law_tenant_farmers
+		law_commercialized_agriculture
+		law_homesteading
+		law_collectivized_agriculture
+	}
+	unlocking_laws = {
+		law_serfdom
+	}		
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_breed_add = 2
+			building_output_fish_add = 0.5 # 10
+		}
+
+		unscaled = {
+			building_subsistence_output_add = 3
+		}			
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_village_house_max_level_add = 1.5
+		}
+	}
+}		
+
+
+pm_serfdom_building_subsistence_rice_paddies = {
+	texture = "gfx/interface/icons/production_method_icons/serfdom.dds"
+	disallowing_laws = {
+		law_tenant_farmers
+		law_commercialized_agriculture
+		law_homesteading
+		law_collectivized_agriculture
+	}
+	unlocking_laws = {
+		law_serfdom
+	}	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_breed_add = 3
+			building_output_grain_add = 1 # 20
+		}
+
+		unscaled = {
+			building_subsistence_output_add = 3
+		}			
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_village_house_max_level_add = 2
+		}
+	}
+}

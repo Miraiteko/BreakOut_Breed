@@ -1,0 +1,16 @@
+﻿bg_village_house = {
+	parent_group = bg_private_infrastructure
+	category = rural
+	lens = agriculture
+	economy_of_scale = no
+	auto_place_buildings = yes
+	pays_taxes = no
+	cash_reserves_max = 20000
+
+	urbanization = 0
+	infrastructure_usage_per_level = 0
+
+	default_building = village_house
+	
+	fired_pops_become_radical = no
+}

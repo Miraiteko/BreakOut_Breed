@@ -54,8 +54,6 @@ NPops = {
 	WORKING_ADULT_RATIO_BASE = 0.50				# Base ratio of working adults to dependents, this can be overridden by pop type definition and country modifiers.
 	WORKING_ADULT_RATIO_SKEW_MAXIMUM = 2.0		# When the ratio of working adults to dependents is skewed, it tends to correct itself, this value clamps the maximum effect of this
 	DEPENDENT_CONSUMPTION_RATIO = 0.8			# Dependents consume this multiple of Needs compared to Working Adults
-	SUBSISTENCE_DIVIDENDS_MULT = 0.5
-	SUBSISTENCE_MARKET_CONSUMPTION_RATIO = 0.10	# The portion of Peasant buy packages that are added as state region consumption.
 	
 	#移除人口过多或过少的修正
 	LOW_POP_THRESHOLD = 5000					# If a state has less than this amount of pops per arable land, apply the low pop modifier

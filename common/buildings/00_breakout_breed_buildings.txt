@@ -7,12 +7,12 @@
 	}
 
 	production_method_groups = {
-		pmg_breed_methods
+		pmg_breed_center_methods
 		pmg_breed_center_space_use
 		pmg_breed_center_ownership
 	}
 
-	required_construction = construction_cost_very_low
+	required_construction = construction_cost_low
 	
 	ai_value = 2500
 	
@@ -22,6 +22,20 @@
 			is_subsidized = yes
 		}
 		occupancy > 0.85
+	}
+}
+village_house = {
+	building_group = bg_village_house
+	texture = "gfx/interface/icons/building_icons/village_house.dds"
+	has_max_level = yes
+	buildable = no
+	expandable = no
+	downsizeable = no
+
+	production_method_groups = {
+		pmg_village_house_methods
+		pmg_village_house_ownership
+		#pmg_ownership_building_subsistence
 	}
 }
 bank = {

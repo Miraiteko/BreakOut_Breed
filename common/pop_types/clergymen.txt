@@ -1,9 +1,9 @@
 ﻿clergymen = {
 	texture = "gfx/interface/icons/pops_icons/clergymen.dds"
 	color = hsv{ 0.13 0.52 0.91 }
-	strata = rich
+	strata = middle
 	start_quality_of_life = 20
-	wage_weight = 60
+	wage_weight = 5
 	literacy_target = 0.80
 	ignores_employment_proportionality = no
 	education_access = 0.5

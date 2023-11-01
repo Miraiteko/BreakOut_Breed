@@ -270,6 +270,13 @@ popneed_services = {
 	}
 	
 	entry = {
+		goods = elite_breed
+		weight = 2.0
+		max_weight = 4.0
+		min_weight = 1.0
+	}
+
+	entry = {
 		goods = telephones
 		
 		weight = 1
@@ -301,7 +308,12 @@ popneed_intoxicants = {
 		max_weight = 150.0
 		min_weight = 5.0
 	}
-	
+	entry = {
+		goods = elite_breed
+		weight = 10
+		max_weight = 50.0
+		min_weight = 0
+	}
 	entry = {
 		goods = opium
 		
@@ -349,8 +361,14 @@ popneed_art = {
 	entry = {
 		goods = investment_management
 		
+		weight = 30
+		max_weight = 150.0
+		min_weight = 1
+	}
+	entry = {
+		goods = elite_breed
 		weight = 10
 		max_weight = 50.0
-		min_weight = 1
+		min_weight = 0
 	}
 }
