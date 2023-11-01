@@ -79,6 +79,8 @@
  concept_breed_power_desc:"抚育能力表示了该地区能够培养的下一代劳动者的规模。自给建筑和居民区可以提供劳动力再生产能力。\n抚育能力不足时，该地区的出生率将下降；同时由于儿童减少，劳动力比例将有所提升。"
  modifier_building_breed_power_add:"@breed!劳动力再生产"
  modifier_building_breed_power_add_desc:"该建筑为所在地区提供的[concept_breed_power]"
+ modifier_state_breed_power_add:"@breed!劳动力再生产"
+ modifier_state_breed_power_add_desc:"该建筑为所在地区提供的[concept_breed_power]"
  concept_breed_power_ratio:"@breed!劳动力再生产效率"
  concept_breed_power_ratio_desc:"劳动力再生产效率是该地区[concept_breed_power]与总人口数量的比值。\n\n劳动力再生产效率超过#v 1#!时，则出生率提高；同时，由于人群中的儿童比例上升，劳动力比例将有所下降。\n劳动力再生产效率不足#v 1#!时，则出生率下降；同时，由于人群中的儿童比例下降，劳动力比例将有所提升。"
  

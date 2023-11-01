@@ -2,7 +2,7 @@
 breed_ratio_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_positive.dds
 	state_birth_rate_mult = 1
-	state_working_adult_ratio_add = -0.15
+	state_working_adult_ratio_add = -0.2
 }
 
 #受教育机会
@@ -17,11 +17,6 @@ low_pop_state = {
 
 high_pop_state = {
 	state_migration_pull_mult = -0.5
-}
-insufficient_tax_capacity = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	state_birth_rate_mult = -1
-	state_working_adult_ratio_add = 0.2
 }
 malnourishment = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds

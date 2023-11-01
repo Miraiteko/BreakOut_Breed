@@ -1,27 +1,11 @@
 ﻿l_simp_chinese:
 
- concept_tax_capacity: "[concept_breed_power]"
- concept_tax_capacity_desc: "$concept_breed_power_desc$"
  QUALIFICATIONS_BASE:"基础"
  QUALIFICATIONS_MAX_BREEDERS_RATIO:"由于当地的抚育者过多"
  QUALIFICATIONS_MIN_BREEDERS_RATIO:"由于当地的抚育者过少"
  QUALIFICATIONS_PEASANTS_UNDER_SERFDOM:"由于[Pop.GetPopType.GetName]职业过于低贱"
- modifier_state_tax_capacity_add:"@breed!地区抚育能力"
- modifier_state_tax_capacity_add_desc:"对[Concept('concept_state', '$concept_states$')][concept_tax_capacity]的增益或惩罚"
- modifier_state_tax_capacity_mult:"$modifier_state_tax_capacity_add$"
- modifier_state_tax_capacity_mult_desc:"$modifier_state_tax_capacity_add_desc$" alert_insufficient_tax_capacity_alert_name:"[SCOPE.GetRootScope.GetState.GetName]（[SCOPE.GetRootScope.GetState.CalcTaxCapacityBalance|+0v]）"
- alert_insufficient_tax_capacity_alert_desc:"地区的抚育没有能力达到上限，你还可以继续增加抚育者人口来促进人口扩张。"
- alert_insufficient_tax_capacity_alert_hint:1 "你可以在[SCOPE.GetRootScope.GetState.GetName]修建[GetBuildingType('building_breed_center').GetName][Concept('concept_building','$concept_buildings$')]来提升该[concept_state]的[concept_tax_capacity]。你还可以通过改变生产方式以提高这些建筑产生的当地抚育能力。"
- alert_insufficient_tax_capacity_alert_action:"[SCOPE.GetRootScope.GetState.GetName]的地区面板" 
- TAX_CAPACITY_USAGE:1 "#header [concept_breed_power]上限#!\n[State.GetName]的[concept_breed_power]上限为$USAGE|1v$\n$TOOLTIP_DELIMITER$\n每$POPS_PER_CAPACITY|vK$[Concept('concept_pop', '人口')]提供一点[concept_breed_power]上限，[State.GetName]总人口为$TOTAL_POPS|vK$"
- STATE_TAX_CAPACITY:2 "[concept_breed_power]\n$STATE_TAX_CAPACITY_CONDENSED$"
- STATE_TAX_CAPACITY_DESC:3 "#header [concept_breed_power]#!\n[State.GetName]还可以容纳[Abs_CFixedPoint(State.CalcTaxCapacityBalance)|1v]的[concept_breed_power]\n$TOOLTIP_DELIMITER$\n[concept_breed_power]：#tooltippable #tooltip:[State.GetTooltipTag],STATE_TAX_CAPACITY_TOOLTIP [State.CalcTaxCapacity|1+]#!#!\n[concept_breed_power]上限：#tooltippable #tooltip:[State.GetTooltipTag],STATE_TAX_CAPACITY_USAGE_TOOLTIP [State.CalcTaxCapacityUsage|1-]#!#![SelectLocalization(GreaterThan_CFixedPoint(State.CalcTaxCapacityUsage,State.CalcTaxCapacity), 'STATE_TAX_CAPACITY_INSUFFICIENT_LONG', '')]"
- STATE_TAX_CAPACITY_USAGE_TOOLTIP:"[State.GetTaxCapacityUsageDesc]"
- STATE_TAX_CAPACITY_TOOLTIP:1 "#header [concept_breed_power]#!\n[State.GetName]拥有[State.CalcTaxCapacity|+0][concept_breed_power]\n$TOOLTIP_DELIMITER$\n[State.GetTaxCapacityDesc]"
- STATE_TAX_CAPACITY_INSUFFICIENT:"\n[State.GetTaxCapacityEffectsDesc]"
- STATE_TAX_CAPACITY_INSUFFICIENT_LONG:"\n\n由于能力未达到上限，该[concept_state]会获得以下效果：\n[State.GetTaxCapacityEffectsDesc]"
- STATE_TAX_CAPACITY_CONDENSED: "#tooltippable #tooltip:[State.GetTooltipTag],STATE_TAX_CAPACITY_TOOLTIP [State.CalcTaxCapacity|0v]#!#!/#tooltippable #tooltip:[State.GetTooltipTag],STATE_TAX_CAPACITY_USAGE_TOOLTIP [State.CalcTaxCapacityUsage|0v]#!#![AddLocalizationIf(GreaterThan_CFixedPoint(State.CalcTaxCapacityUsage, State.CalcTaxCapacity), 'STATE_TAX_CAPACITY_INSUFFICIENT')][AddLocalizationIf(LessThan_CFixedPoint(State.CalcTaxCapacityUsage,State.CalcTaxCapacity), '\n@warning!#n 已经达到上限#!')]"
 
  #需求表
  popneed_health:"健康"
  popneed_luxury_clothing:"体面衣物"
+ popneed_intoxicants:"满足感"

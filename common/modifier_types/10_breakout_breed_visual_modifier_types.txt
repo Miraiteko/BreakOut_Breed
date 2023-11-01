@@ -8,38 +8,10 @@ building_breed_power_add = {
 	percent = no
 	num_decimals = 0
 }
-building_nuclear_holdings_add = {
+state_breed_power_add = {
 	good = yes
 	percent = no
-}
-building_nuclear_interception_add = {
-	good = yes
-	percent = yes
-}
-building_nuclear_penetration_add = {
-	good = yes
-	percent = yes
-}
-
-building_nuclear_impact_wave_add = {
-	good = yes
-	percent = no
-}
-building_nuclear_radiation_add = {
-	good = yes
-	percent = no
-}
-building_nuclear_pollution_add = {
-	good = yes
-	percent = no
-}
-building_nuclear_defence_add = {
-	good = yes
-	percent = no
-}
-state_min_breeders_ratio_add = {
-	good = no
-	percent = yes
+	num_decimals = 0
 }
 state_max_breeders_ratio_add = {
 	good = yes

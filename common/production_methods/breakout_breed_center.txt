@@ -17,7 +17,7 @@ pm_tradition_breed = {
 	}		
 	state_modifiers = {
 		workforce_scaled = {
-			state_tax_capacity_add = 1.4
+			state_breed_power_add = 1.4
 			#building_breed_power_add = 42000
 		}	
 	}	
@@ -48,7 +48,7 @@ pm_elite_breed = {
 	}		
 	state_modifiers = {
 		workforce_scaled = {
-			state_tax_capacity_add = 1
+			state_breed_power_add = 1
 			#building_breed_power_add = 30000
 		}	
 	}		

@@ -1,1 +1,12 @@
-{"name":"劳与资的再生产","id":"","version":"","supported_game_version":"","short_description":"","tags":[],"relationships":[]}
+{
+    "name":"劳与资的再生产",
+    "id":"",
+    "version":"",
+    "supported_game_version":"",
+    "short_description":"",
+    "tags":[],
+    "relationships":[],
+    "game_custom_data" : {
+        "multiplayer_synchronized" : true
+    }
+}
