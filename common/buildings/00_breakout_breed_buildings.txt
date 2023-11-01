@@ -1,5 +1,5 @@
 ﻿breed_center = {
-	building_group = bg_urban_facilities	
+	building_group = bg_private_infrastructure	
 	texture = "gfx/interface/icons/building_icons/breed_center.dds"
 	
 	unlocking_technologies = {
