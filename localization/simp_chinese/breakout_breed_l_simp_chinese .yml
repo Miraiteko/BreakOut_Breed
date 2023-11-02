@@ -113,7 +113,7 @@
 
  #教育相关
  concept_base_education_access:"@breed!基础受教育机会"
- concept_base_education_access_desc:"这是新增劳动力的成长环境带来的[concept_education_access]。\n自给农场提供的基础受教育机会非常少，而配有学校设施的社区会提供较多的基础受教育机会。\n如果同一个地区同时有多种劳动力来源的话，受教育机会将按照规模进行加权平均。"
+ concept_base_education_access_desc:"这是新增劳动力的成长环境带来的[concept_education_access]。\n劳动生产建筑出产的@elite_breed!$elite_breed$相较于@breed!$breed$越多，带来的[concept_education_access]就会越多。\n如果同一个地区同时有多种劳动力来源的话，受教育机会将按照规模进行加权平均。"
  modifier_building_base_education_access_add:"@breed!基础受教育机会"
  modifier_building_base_education_access_add_desc:"该建筑产生的劳动力的[concept_base_education_access]"
  

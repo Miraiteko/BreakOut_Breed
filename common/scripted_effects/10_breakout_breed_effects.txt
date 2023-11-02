@@ -128,3 +128,41 @@ breed_power_monthly_check = {
 		}
 	}
 }
+base_education_access_monthly_check = {
+	save_scope_as = checked_state
+	if = {
+		limit = { has_modifier = base_education_access_modifier }
+		remove_modifier = base_education_access_modifier
+	} 
+	set_variable = {
+		name = state_total_breed
+		value = 0
+	}
+	set_variable = {
+		name = state_total_elite_breed
+		value = 0
+	}
+	every_scope_building = {
+		state = {
+			change_variable = {
+				name = state_total_breed
+				add = prev.modifier:building_output_breed_add
+			}
+			change_variable = {
+				name = state_total_elite_breed
+				add = prev.modifier:building_output_elite_breed_add
+			}
+		}
+	}
+	set_variable = {
+		name = state_base_education_access_ratio
+		value = base_education_access_ratio
+	}
+	if = {
+		limit = { var:state_base_education_access_ratio > 0.03 }
+		add_modifier = {
+			name = base_education_access_modifier
+			multiplier = var:state_base_education_access_ratio
+		}
+	}
+}

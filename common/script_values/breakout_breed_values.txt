@@ -11,3 +11,10 @@ breed_ratio_penalty = {
     value =  1
     subtract = breed_ratio
 }
+base_education_access_ratio = {
+    value =  scope:checked_state.var:state_total_elite_breed
+    divide = {
+        value =  scope:checked_state.var:state_total_elite_breed
+        add = scope:checked_state.var:state_total_breed
+    }
+}

@@ -33,8 +33,8 @@ pm_tradition_breed = {
 		workforce_scaled = {
 			building_input_transportation_add = 1
 			building_input_services_add = 2 #30
-			building_output_breed_add = 4 #50
-			building_output_elite_breed_add = 4 #75
+			building_output_breed_add = 5 #50
+			building_output_elite_breed_add = 3 #75
 			building_breed_power_add = 40
 			#building_production_exp_growth_add = 0.001
 		}	
@@ -57,8 +57,8 @@ pm_tradition_breed_breed_center = {
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_services_add = 2 #30
-			building_output_breed_add = 4 #50
-			building_output_elite_breed_add = 4 #75
+			building_output_breed_add = 5 #50
+			building_output_elite_breed_add = 3 #75
 			building_breed_power_add = 40
 			#building_production_exp_growth_add = 0.001
 		}	
@@ -88,8 +88,8 @@ pm_elite_breed = {
 		workforce_scaled = {
 			building_input_paper_add = 1 #30
 			building_input_services_add = 3 #30
-			building_output_breed_add = 2 #50
-			building_output_elite_breed_add = 8 #75
+			building_output_breed_add = 4 #50
+			building_output_elite_breed_add = 6 #75
 			building_breed_power_add = 40
 			#building_production_exp_growth_add = 0.0015
 			
