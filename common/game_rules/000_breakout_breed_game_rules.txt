@@ -1,0 +1,8 @@
+﻿elite_breed_effect = {
+	default = base_education_access_check
+
+	base_education_access_check = {
+	}
+	no_base_education_access_check = {
+	}
+}

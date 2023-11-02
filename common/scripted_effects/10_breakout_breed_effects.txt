@@ -159,7 +159,7 @@ base_education_access_monthly_check = {
 		value = base_education_access_ratio
 	}
 	if = {
-		limit = { var:state_base_education_access_ratio > 0.03 }
+		limit = { var:state_base_education_access_ratio > 0.035 }
 		add_modifier = {
 			name = base_education_access_modifier
 			multiplier = var:state_base_education_access_ratio

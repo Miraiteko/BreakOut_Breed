@@ -19,6 +19,9 @@ breakout_breed_on_monthly_pulse_state = {
 		#抚育能力结算
 		breed_power_monthly_check = yes
 		#受教育机会结算
-		base_education_access_monthly_check = yes
+		if = {
+			limt = { has_game_rule = base_education_access_check }
+			base_education_access_monthly_check = yes
+		}
 	}
 }

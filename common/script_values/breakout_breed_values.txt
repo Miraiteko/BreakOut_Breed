@@ -16,5 +16,6 @@ base_education_access_ratio = {
     divide = {
         value =  scope:checked_state.var:state_total_elite_breed
         add = scope:checked_state.var:state_total_breed
+        add = 1
     }
 }

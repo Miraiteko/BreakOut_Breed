@@ -21,8 +21,6 @@ breed_ratio_penalty_modifier = {
 base_education_access_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	state_education_access_add = 0.3
-	state_assimilation_mult = 0.15
-	state_conversion_mult = 0.15
 }
 
 low_pop_state = {

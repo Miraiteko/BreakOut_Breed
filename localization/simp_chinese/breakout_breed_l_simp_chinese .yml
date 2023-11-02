@@ -1,10 +1,11 @@
 ﻿l_simp_chinese:
- breakout_breed_initial:"#breakout_breed 生生不息#!初始化效果"
+ BREAKOUT_BREED:"#breakout_breed 生生不息#!"
+ breakout_breed_initial:"$BREAKOUT_BREED$初始化效果"
  #抚育者相关
  breeders:"$breeders_only_icon$ $breeders_no_icon$"
  breeders_only_icon:"@soldiers!"
  breeders_no_icon:"抚育者"
- breeders_desc:"抚育者是指那些为了下一代的成长而努力劳作的人，主要包括了孕妇产妇、家庭主妇、保姆看护以及幼儿教师。\n\n在原版#v 维多利亚3#!游戏中，这些人群被视为受抚养者。但是在#breakout_breed 生生不息#!之中，这些人群被视作重要的社会劳动者，因此单独划分为一个新的一个职业。"
+ breeders_desc:"抚育者是指那些为了下一代的成长而努力劳作的人，主要包括了孕妇产妇、家庭主妇、保姆看护以及幼儿教师。\n\n在原版#v 维多利亚3#!游戏中，这些人群被视为受抚养者。但是在$BREAKOUT_BREED$之中，这些人群被视作重要的社会劳动者，因此单独划分为一个新的一个职业。"
  BREEDERS_QUALIFICATIONS_DESC:"任何人群都能成为#v $breeders$#!。当#v $breeders$#!人口缺少的时候更容易获得资质。\n[GetLawGroup('lawgroup_rights_of_women').GetName]法律限制了#v $breeders$#!获得其他职业资质的可能性。"
  BK_PEASANTS_QUALIFICATIONS_DESC:"除了受到[GetLawGroup('lawgroup_rights_of_women').GetName]限制的$breeders$之外，任何人群都能成为#v $peasants$#!。\n[concept_literacy]较低的人群更乐意成为#v $peasants$#!。"
  BK_LABORERS_QUALIFICATIONS_DESC:"除了受到[GetLawGroup('lawgroup_rights_of_women').GetName]限制的$breeders$之外，任何人群都能成为#v $laborers$#!。\n[concept_wealth]较高的人群不愿意成为#v $laborers$#!。"
@@ -112,8 +113,14 @@
  pm_breed_modifier:"[concept_breed_power]"
 
  #教育相关
+ rule_elite_breed_effect:"$BREAKOUT_BREED$： 优育效果"
+ setting_base_education_access_check:"#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_base_education_access_check_desc 标准#!#!"
+ setting_base_education_access_check_desc:"较高的@elite_breed!$elite_breed$产出将会以地区修正的形式提高[concept_base_education_access]。\n#X 注意：#!此选项会额外占用游戏性能。"
+ setting_no_base_education_access_check:"#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_no_base_education_access_check_desc 无#!#!"
+ setting_no_base_education_access_check_desc:"@elite_breed!$elite_breed$只是@breed!$breed$的高级替代，不会有额外的效果。"
+
  concept_base_education_access:"@breed!基础受教育机会"
- concept_base_education_access_desc:"这是新增劳动力的成长环境带来的[concept_education_access]。\n劳动生产建筑出产的@elite_breed!$elite_breed$相较于@breed!$breed$越多，带来的[concept_education_access]就会越多。\n如果同一个地区同时有多种劳动力来源的话，受教育机会将按照规模进行加权平均。"
+ concept_base_education_access_desc:"这是新增劳动力的成长环境带来的[concept_education_access]。\n地区中的[SelectLocalization(GetPlayer.IsValid,'concept_village_house_desc_added','村居')]和[SelectLocalization(GetPlayer.IsValid,'concept_breed_center_desc_added','社区')]出产的@elite_breed!$elite_breed$相较于@breed!$breed$越多，带来的[concept_education_access]就会越多。"
  modifier_building_base_education_access_add:"@breed!基础受教育机会"
  modifier_building_base_education_access_add_desc:"该建筑产生的劳动力的[concept_base_education_access]"
  
