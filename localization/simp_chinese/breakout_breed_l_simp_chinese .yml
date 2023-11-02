@@ -93,7 +93,9 @@
  
  #出生率修正相关
  concept_breed_power:"@breed!抚育能力"
- concept_breed_power_desc:"抚育能力表示了该地区能够培养的下一代劳动者的规模。村居和社区可以提供地区抚育能力。\n抚育能力不足时，该地区的出生率将下降；同时由于儿童减少，劳动力比例将有所提升。"
+ concept_breed_power_desc:"抚育能力表示了该地区能够培养的下一代劳动者的规模。[SelectLocalization(GetPlayer.IsValid,'concept_village_house_desc_added','村居')]和[SelectLocalization(GetPlayer.IsValid,'concept_breed_center_desc_added','社区')]可以提供地区抚育能力。\n抚育能力不足时，该地区的出生率将下降；同时由于儿童减少，劳动力比例将有所提升。"
+ concept_village_house_desc_added:"[GetBuildingType('village_house').GetName]"
+ concept_breed_center_desc_added:"[GetBuildingType('breed_center').GetName]"
  modifier_building_breed_power_add:"@breed!地区抚育能力"
  modifier_building_breed_power_add_desc:"该建筑为所在地区提供的[concept_breed_power]"
  modifier_state_breed_power_add:"@breed!地区抚育能力"
