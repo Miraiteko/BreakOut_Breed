@@ -1034,10 +1034,23 @@ ai_strategy_default = {
 		}	
 		
 		if = {
-			limit = { has_law = law_type:law_traditionalism }
-			multiply = 0.75
+			limit = {
+				scaled_debt > 0.1
+			}
+			multiply = 0.6
 		}
-		
+		if = {
+			limit = {
+				scaled_debt > 0.5
+			}
+			multiply = 0.6
+		}
+		if = {
+			limit = {
+				construction_queue_government_duration > 30
+			}
+			multiply = 1.5
+		}
 		if = {
 			limit = {
 				construction_queue_government_duration > 30
@@ -1054,26 +1067,32 @@ ai_strategy_default = {
 			limit = {
 				investment_pool_net_income > 10000
 			}
-			multiply = 2
+			multiply = 1.5
 		}
 		if = {
 			limit = {
 				investment_pool_net_income > 100000
 			}
-			multiply = 2
+			multiply = 1.5
 		}
 		if = {
 			limit = {
 				investment_pool > 1000000
 			}
-			multiply = 2
+			multiply = 1.5
 		}
 		if = {
 			limit = {
 				investment_pool > 10000000
 			}
-			multiply = 2
+			multiply = 1.5
 		}
+		
+		if = {
+			limit = { has_law = law_type:law_traditionalism }
+			multiply = 0.75
+		}
+		
 		if = {
 			limit = { 
 				OR = {
