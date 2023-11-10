@@ -94,7 +94,7 @@
  
  #出生率修正相关
  concept_breed_power:"@breed!抚育能力"
- concept_breed_power_desc:"抚育能力表示了该地区能够培养的下一代劳动者的规模。[SelectLocalization(GetPlayer.IsValid,'concept_village_house_desc_added','村居')]和[SelectLocalization(GetPlayer.IsValid,'concept_breed_center_desc_added','社区')]可以提供地区抚育能力。\n抚育能力不足时，该地区的出生率将下降；同时由于儿童减少，劳动力比例将有所提升。"
+ concept_breed_power_desc:"抚育能力表示了该地区能够培养的下一代劳动者的规模。[SelectLocalization(GetPlayer.IsValid,'concept_village_house_desc_added','村居')]和[SelectLocalization(GetPlayer.IsValid,'concept_breed_center_desc_added','社区')]可以提供地区抚育能力。\n为了维持标准的[concept_breed_power_ratio],每一千人需要消耗1点抚育能力。当抚育能力超额或是不足时，地区的[Concept('concept_pop_growth', '$concept_pop_growth_birthrate$')]就会受到影响。"
  concept_village_house_desc_added:"[GetBuildingType('village_house').GetName]"
  concept_breed_center_desc_added:"[GetBuildingType('breed_center').GetName]"
  modifier_building_breed_power_add:"@breed!地区抚育能力"
@@ -102,7 +102,7 @@
  modifier_state_breed_power_add:"@breed!地区抚育能力"
  modifier_state_breed_power_add_desc:"该建筑为所在地区提供的[concept_breed_power]"
  concept_breed_power_ratio:"@breed!抚育效率"
- concept_breed_power_ratio_desc:"抚育效率是该地区[concept_breed_power]与总人口数量（每千人）的比值。\n\n抚育效率超过#v 1#!时，则出生率提高；同时，由于人群中的儿童比例上升，劳动力比例将有所下降。\n抚育效率不足#v 1#!时，则出生率下降；同时，由于人群中的儿童比例下降，劳动力比例将有所提升。"
+ concept_breed_power_ratio_desc:"抚育效率是该地区[concept_breed_power]与总人口数量（每千人）的比值。\n\n抚育效率超过#v 1#!时，则[Concept('concept_pop_growth', '$concept_pop_growth_birthrate$')]提高；同时，由于人群中的儿童比例上升，[Concept('concept_workforce', '$modifier_state_working_adult_ratio_add$')]比例将有所下降。\n抚育效率不足#v 1#!时，则[Concept('concept_pop_growth', '$concept_pop_growth_birthrate$')]下降；同时，由于人群中的儿童比例下降，[Concept('concept_workforce', '$modifier_state_working_adult_ratio_add$')]比例将有所提升。"
  
  breed_ratio_modifier:"[concept_breed_power_ratio]"
  breed_ratio_bonus_modifier:"[concept_breed_power_ratio]#p 较高#!"
