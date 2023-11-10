@@ -72,6 +72,15 @@ law_women_own_property = {
 				limit = {
 					owner = {
 						has_law = law_type:law_no_womens_rights
+					}
+					is_pop_type = breeders
+				}
+				value = 0.2
+			}
+			if = {
+				limit = {
+					owner = {
+						has_law = law_type:law_no_womens_rights
 						has_technology_researched = feminism
 					}
 				}
@@ -175,6 +184,34 @@ law_women_in_the_workplace = {
 							has_law = law_type:law_no_womens_rights
 							has_law = law_type:law_women_own_property
 						}
+						has_technology_researched = feminism
+					}
+					is_pop_type = breeders
+				}
+				value = 1.0
+			}
+			if = {
+				limit = {
+					owner = {
+						OR = {
+							has_law = law_type:law_no_womens_rights
+							has_law = law_type:law_women_own_property
+						}
+						has_technology_researched = feminism
+					}
+					is_pop_type = breeders
+					is_employed = no
+				}
+				value = 5.0
+			}
+			if = {
+				limit = {
+					owner = {
+						OR = {
+							has_law = law_type:law_no_womens_rights
+							has_law = law_type:law_women_own_property
+						}
+						has_technology_researched = feminism
 					}
 					is_pop_type = breeders
 					is_employed = no
@@ -183,16 +220,17 @@ law_women_in_the_workplace = {
 			}
 			if = {
 				limit = {
-					is_pop_type = breeders
 					owner = {
 						OR = {
 							has_law = law_type:law_no_womens_rights
 							has_law = law_type:law_women_own_property
 						}
+						has_technology_researched = feminism
 					}
 					state = {
 						turmoil > 0.25
 					}
+					is_pop_type = breeders
 				}
 				value = 10.0
 			}
@@ -269,6 +307,25 @@ law_womens_suffrage = {
 				limit = {
 					owner = {
 						has_technology_researched = feminism
+					}
+					is_pop_type = breeders
+				}
+				value = 1.0
+			}
+			if = {
+				limit = {
+					owner = {
+						has_technology_researched = feminism
+					}
+					is_pop_type = breeders
+					is_employed = no
+				}
+				value = 5.0
+			}
+			if = {
+				limit = {
+					owner = {
+						has_technology_researched = feminism
 						has_technology_researched = political_agitation
 					}
 					is_pop_type = breeders
@@ -278,7 +335,6 @@ law_womens_suffrage = {
 			}
 			if = {
 				limit = {
-					is_pop_type = breeders
 					owner = {
 						has_technology_researched = feminism
 						has_technology_researched = political_agitation
@@ -287,6 +343,7 @@ law_womens_suffrage = {
 						turmoil > 0.25
 					}
 				}
+					is_pop_type = breeders
 				value = 10.0
 			}
 		}
