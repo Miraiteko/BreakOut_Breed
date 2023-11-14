@@ -3,7 +3,7 @@ breed = {
 	texture = "gfx/interface/icons/goods_icons/breed.dds"
 	cost = 50
 	category = staple
-	local = yes
+	tradeable = no
 	
 	prestige_factor = 5
 	
@@ -16,7 +16,7 @@ elite_breed = {
 	texture = "gfx/interface/icons/goods_icons/elite_breed.dds"
 	cost = 75
 	category = staple
-	local = yes
+	tradeable = no
 	
 	prestige_factor = 5
 	
@@ -28,6 +28,7 @@ investment_management = {
 	texture = "gfx/interface/icons/goods_icons/investment_management.dds"
 	cost = 160
 	category = luxury
+	tradeable = yes
 	
 	prestige_factor = 5
 	

@@ -24,7 +24,7 @@
 				}
 				value = 1
 			}		
-		}
+		}	
 	}	
 	
 	qualifications_growth_desc = "SHOPKEEPERS_QUALIFICATIONS_DESC"

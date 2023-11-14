@@ -7,7 +7,7 @@
 	start_quality_of_life = 20
 	wage_weight = 6
 	literacy_target = 0.60
-	dependent_wage = 0.0	# per year
+	dependent_wage = 0.5	# per year
 	unemployment = yes
 	
 	# 70% - 100% politically engaged
