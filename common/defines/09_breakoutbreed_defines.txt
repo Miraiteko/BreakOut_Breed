@@ -13,42 +13,45 @@
 
 NPops = {
 	#以下数值的单位均为月，而游戏中显示的是年
-
+	
 	POP_GROWTH_MAX_MORTALITY = @breakout_max_mortality
 	#基础死亡率
 
-	POP_GROWTH_STARVING_SLOPE = @[(breakout_mortality_at_equilibrium-breakout_max_mortality)/breakout_sol_equilibrium]
+	POP_GROWTH_MORTALITY_STARVING_SLOPE = @[(breakout_mortality_at_equilibrium-breakout_max_mortality)/breakout_sol_equilibrium]
 	#平衡点前死亡率斜率
-	POP_GROWTH_SOL_EQUILIBRIUM = @breakout_sol_equilibrium
-	#平衡点
-	POP_GROWTH_MORTALITY_AT_EQUILIBRIUM = @breakout_mortality_at_equilibrium
-	#平衡点死亡率
 	
-	POP_GROWTH_IMPROVING_SLOPE = @[(breakout_mortality_at_delta_cap-breakout_mortality_at_equilibrium)/(breakout_sol_delta_cap-breakout_sol_equilibrium)]
+	POP_GROWTH_EQUILIBRIUM_SOL = @breakout_sol_equilibrium
+	POP_GROWTH_TRANSITION_SOL = @breakout_sol_equilibrium
+	#平衡点
+	
+	POP_GROWTH_MORTALITY_EQUILIBRIUM_TO_GROWTH_MAX_SLOPE = @[(breakout_mortality_at_delta_cap-breakout_mortality_at_equilibrium)/(breakout_sol_delta_cap-breakout_sol_equilibrium)]
 	#拐点前死亡率斜率
-	POP_GROWTH_IMPROVING_INTERCEPT = @[breakout_mortality_at_delta_cap-(breakout_mortality_at_delta_cap-breakout_mortality_at_equilibrium)/(breakout_sol_delta_cap-breakout_sol_equilibrium)*breakout_sol_delta_cap]
+	POP_GROWTH_MORTALITY_EQUILIBRIUM_TO_GROWTH_MAX_INTERCEPT = @[breakout_mortality_at_delta_cap-(breakout_mortality_at_delta_cap-breakout_mortality_at_equilibrium)/(breakout_sol_delta_cap-breakout_sol_equilibrium)*breakout_sol_delta_cap]
 	#拐点前死亡率截距
-	POP_GROWTH_SOL_DELTA_CAP = @breakout_sol_delta_cap	
+
+	POP_GROWTH_MAX_SOL = @breakout_sol_delta_cap	
 	#拐点
 
-	POP_GROWTH_FIXED_DELTA_SLOPE = @[(breakout_mortality_at_cap-breakout_mortality_at_delta_cap)/(breakout_sol_cap-breakout_sol_delta_cap)]
+	POP_GROWTH_MORTALITY_GROWTH_MAX_TO_STABLE_SLOPE = @[(breakout_mortality_at_cap-breakout_mortality_at_delta_cap)/(breakout_sol_cap-breakout_sol_delta_cap)]
 	#末端死亡率斜率
-	POP_GROWTH_FIXED_DELTA_INTERCEPT = @[breakout_mortality_at_cap-(breakout_mortality_at_cap-breakout_mortality_at_delta_cap)/(breakout_sol_cap-breakout_sol_delta_cap)*breakout_sol_cap]
+	POP_GROWTH_MORTALITY_GROWTH_MAX_TO_STABLE_INTERCEPT = @[breakout_mortality_at_cap-(breakout_mortality_at_cap-breakout_mortality_at_delta_cap)/(breakout_sol_cap-breakout_sol_delta_cap)*breakout_sol_cap]
 	#末端死亡率截距	
-	POP_GROWTH_SOL_CAP = @breakout_sol_cap			
+
+	POP_GROWTH_STABLE_SOL = @breakout_sol_cap			
 	#饱和点
+	
 	POP_GROWTH_MIN_MORTALITY = @breakout_mortality_at_cap				
-	#保和点死亡率
+	#饱和点死亡率
 
 	POP_GROWTH_MAX_BIRTHRATE = @breakout_pop_growth				
 	#基础出生率
-	POP_GROWTH_BIRTHRATE_AT_DELTA_CAP = @[breakout_pop_growth*0.99]
+	POP_GROWTH_BIRTHRATE_TRANSITION_INTERCEPT = @[breakout_pop_growth*0.99]
 	#拐点出生率
 	POP_GROWTH_MIN_BIRTHRATE = @[breakout_pop_growth*0.98]			
 	#饱和点出生率
-	POP_GROWTH_BIRTHRATE_REDUCTION_PER_SOL = 0
+	POP_GROWTH_BIRTHRATE_PRETRANSITION_SLOPE = 0
+	POP_GROWTH_BIRTHRATE_TRANSITION_SLOPE = 0
 	#出生率下降斜率
-	
 	
 	#劳动力比例
 	WORKING_ADULT_RATIO_BASE = 0.50				# Base ratio of working adults to dependents, this can be overridden by pop type definition and country modifiers.
@@ -62,6 +65,7 @@ NPops = {
 	#人口征税能力开支增加
 	INDIVIDUALS_TAXED_PER_TAX_CAPACITY = 8000 # from 10000
 } 
+### End Pop Growth Constant defines
 
 NPolitics = {
 	#人口行政力开支翻倍
