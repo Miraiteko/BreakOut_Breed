@@ -3,7 +3,7 @@
 	color = hsv{ 0.94 0.51 0.37 }
 	strata = middle
 	start_quality_of_life = 10
-	wage_weight = 6
+	wage_weight = 4
 	literacy_target = 0.80
 	education_access = 1.0
 	dependent_wage = 0.5	# per year
@@ -54,12 +54,12 @@
 		else_if = {
 			limit = {
 				is_peasant_under_serfdom = no
-				literacy_rate > 0.05
+				literacy_rate > 0.2
 			}
-			# baseline: ( literacy - 0.05 ) * 10 + ( wealth / 10 ), norm 5
+			# baseline: ( literacy - 0.2 ) * 10 + ( wealth / 10 ), norm 5
 			add = {
 				value = literacy_rate
-				subtract = 0.05
+				subtract = 0.2
 				multiply = 20
 				desc = "QUALIFICATIONS_LITERACY_FACTOR"
 			}

@@ -12,7 +12,7 @@
 	
 	building_modifiers = {	
 		workforce_scaled = {
-			building_input_breed_add = 1
+			goods_input_breed_add = 1
 		}
 		unscaled = {
 			building_subsistence_output_add = 4
@@ -38,8 +38,8 @@ pm_serfdom = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_breed_add = 2
-			building_output_grain_add = 0.5 # 10
+			goods_input_breed_add = 2
+			goods_output_grain_add = 0.5 # 10
 		}
 
 		unscaled = {
@@ -67,8 +67,8 @@ pm_serfdom_building_subsistence_orchards = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_breed_add = 2
-			building_output_fruit_add = 0.33 # 10
+			goods_input_breed_add = 2
+			goods_output_fruit_add = 0.33 # 10
 		}
 
 		unscaled = {
@@ -98,8 +98,8 @@ pm_serfdom_building_subsistence_pastures = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_breed_add = 2
-			building_output_meat_add = 0.33 # 10
+			goods_input_breed_add = 2
+			goods_output_meat_add = 0.33 # 10
 		}
 
 		unscaled = {
@@ -126,8 +126,8 @@ pm_serfdom_building_subsistence_fishing_villages = {
 	}		
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_breed_add = 2
-			building_output_fish_add = 0.5 # 10
+			goods_input_breed_add = 2
+			goods_output_fish_add = 0.5 # 10
 		}
 
 		unscaled = {
@@ -155,8 +155,8 @@ pm_serfdom_building_subsistence_rice_paddies = {
 	}	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_breed_add = 3
-			building_output_grain_add = 1 # 20
+			goods_input_breed_add = 3
+			goods_output_grain_add = 1 # 20
 		}
 
 		unscaled = {

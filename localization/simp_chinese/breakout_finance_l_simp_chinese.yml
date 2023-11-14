@@ -2,10 +2,10 @@
 
  #金融相关
  investment_management:"投资服务"
- modifier_building_output_investment_management_add:"每级@investment_management!投资服务产出"
- modifier_building_output_investment_management_add_desc:"建筑产出的@investment_management!投资服务数量"
- modifier_building_input_investment_management_add:"每级@investment_management!投资服务投入"
- modifier_building_input_investment_management_add_desc:"建筑投入的@investment_management!投资服务数量"
+ modifier_goods_output_investment_management_add:"每级@investment_management!投资服务产出"
+ modifier_goods_output_investment_management_add_desc:"建筑产出的@investment_management!投资服务数量"
+ modifier_goods_input_investment_management_add:"每级@investment_management!投资服务投入"
+ modifier_goods_input_investment_management_add_desc:"建筑投入的@investment_management!投资服务数量"
  
  bank:"银行"
  pmg_bank:"银行业务"

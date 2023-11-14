@@ -5,31 +5,31 @@ state_village_house_max_level_add = {
 	num_decimals = 0
 }
 #商品吞吐
-building_output_investment_management_add = {
+goods_output_investment_management_add = {
 	good = yes
 	percent = no
 }
-building_input_investment_management_add = {
+goods_input_investment_management_add = {
 	good = no
 	percent = no
 }
-building_output_breed_add = {
+goods_output_breed_add = {
 	good = yes
 	percent = no
 }
-building_input_breed_add = {
+goods_input_breed_add = {
 	good = no
 	percent = no
 }
-building_output_elite_breed_add = {
+goods_output_elite_breed_add = {
 	good = yes
 	percent = no
 }
-building_input_elite_breed_add = {
+goods_input_elite_breed_add = {
 	good = no
 	percent = no
 }
-building_input_services_add = {
+goods_input_services_add = {
 	good = no
 	percent = no
 }

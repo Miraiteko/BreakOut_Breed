@@ -1,7 +1,7 @@
 ﻿#出生抚育者比例结算
 breeders_ratio_monthly_check = {
-	save_scope_as = checked_country
-	
+	save_scope_as = checked_state
+	owner = { save_scope_as = checked_country }
 	#计算抚育者资质参数
 	set_variable = {
 		name = min_breeders_ratio
@@ -15,64 +15,58 @@ breeders_ratio_monthly_check = {
 	#如果抚育者人口比例低于下限
 	if = {	
 		limit = {
-			pop_type_percent_country = {
+			pop_type_percent_state = {
 				pop_type = breeders
 				percent < var:min_breeders_ratio
 			}
 		}
-		every_scope_state = {
-			set_variable = {
-				name = breeders_gain_other_qualifications_bonus
-				value = -1
+		set_variable = {
+			name = breeders_gain_other_qualifications_bonus
+			value = -1
+		}
+		set_variable = {
+			name = other_gain_breeders_qualifications_bonus
+			value = 1
+		}
+		random_scope_pop = {
+			limit = {
+				NOT = { is_pop_type = breeders }
+				is_employed = no
 			}
-			set_variable = {
-				name = other_gain_breeders_qualifications_bonus
-				value = 1
-			}
-			random_scope_pop = {
-				limit = {
-					NOT = { is_pop_type = breeders }
-					is_employed = no
-				}
-				change_poptype =  pop_type:breeders
-			}
+			change_poptype =  pop_type:breeders
 		}
 	}
 	else_if = { #如果抚育者人口比例高于上限
 		limit = {
-			pop_type_percent_country = {
+			pop_type_percent_state = {
 				pop_type = breeders
 				percent > var:max_breeders_ratio
 			}
 		}
-		every_scope_state = {
-			set_variable = {
-				name = other_gain_breeders_qualifications_bonus
-				value = -1
+		set_variable = {
+			name = other_gain_breeders_qualifications_bonus
+			value = -1
+		}
+		set_variable = {
+			name = breeders_gain_other_qualifications_bonus
+			value = 1
+		}
+		random_scope_pop = {
+			limit = {
+				is_pop_type = breeders
+				is_employed = no
 			}
-			set_variable = {
-				name = breeders_gain_other_qualifications_bonus
-				value = 1
-			}
-			random_scope_pop = {
-				limit = {
-					is_pop_type = breeders
-					is_employed = no
-				}
-				change_poptype =  pop_type:laborers
-			}
+			change_poptype =  pop_type:laborers
 		}
 	}
 	else = {
-		every_scope_state = {
-			set_variable = {
-				name = breeders_gain_other_qualifications_bonus
-				value = 1
-			}
-			set_variable = {
-				name = other_gain_breeders_qualifications_bonus
-				value = 1
-			}
+		set_variable = {
+			name = breeders_gain_other_qualifications_bonus
+			value = 1
+		}
+		set_variable = {
+			name = other_gain_breeders_qualifications_bonus
+			value = 1
 		}
 	}
 
@@ -146,11 +140,11 @@ base_education_access_monthly_check = {
 		state = {
 			change_variable = {
 				name = state_total_breed
-				add = prev.modifier:building_output_breed_add
+				add = prev.modifier:goods_output_breed_add
 			}
 			change_variable = {
 				name = state_total_elite_breed
-				add = prev.modifier:building_output_elite_breed_add
+				add = prev.modifier:goods_output_elite_breed_add
 			}
 		}
 	}

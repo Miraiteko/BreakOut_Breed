@@ -25,8 +25,7 @@
 				}
 				value = 1
 			}		
-		}
-		
+		}	
 	}	
 	
 	qualifications_growth_desc = "CAPITALISTS_QUALIFICATIONS_DESC"

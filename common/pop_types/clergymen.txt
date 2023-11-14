@@ -50,69 +50,67 @@
 				desc = "QUALIFICATIONS_MIN_BREEDERS_RATIO"
 			}
 		}
-		else = {
+		else_if = {
+			limit = {
+				literacy_rate > 0.2
+			}
+			# baseline: ( literacy - 0.2 ) * 20, norm 6 for Literacy 50% and Accepted Religion
+			add = {
+				value = literacy_rate
+				subtract = 0.2
+				multiply = 20
+				desc = "QUALIFICATIONS_LITERACY_FACTOR"
+			}
 			if = {
 				limit = {
-					literacy_rate > 0.2
+					is_pop_type = academics
 				}
-				# baseline: ( literacy - 0.2 ) * 20, norm 6 for Literacy 50% and Accepted Religion
-				add = {
-					value = literacy_rate
-					subtract = 0.2
-					multiply = 20
-					desc = "QUALIFICATIONS_LITERACY_FACTOR"
-				}
-				if = {
-					limit = {
-						is_pop_type = academics
-					}
-					multiply = {
-						value = 5
-						desc = "QUALIFICATIONS_FAVORED_TYPE"
-					}
-				}
-				if = {
-					limit = {
-						is_pop_type = aristocrats
-					}
-					multiply = {
-						value = 5
-						desc = "QUALIFICATIONS_FAVORED_TYPE"
-					}
-				}
-				if = {
-					limit = {
-						religion_accepted = no
-					}
-					multiply = {
-						value = 0.05
-						desc = "POTENTIALS_RELIGIOUS_DISCRIMINATION"
-					}
-				}
-				if = {
-					limit = {
-						is_peasant_under_serfdom = yes
-					}
-					multiply = {
-						value = 0.1
-						desc = "QUALIFICATIONS_PEASANTS_UNDER_SERFDOM"
-					}
-				}
-				if = {
-					limit = {
-						religion = rel:atheist
-					}
-					multiply = {
-						value = 0.1
-						desc = "ATHEIST_CLERGYMEN"
-					}
+				multiply = {
+					value = 5
+					desc = "QUALIFICATIONS_FAVORED_TYPE"
 				}
 			}
-			else = {		
-				value = {
-					desc = "QUALIFICATIONS_INSUFFICIENT_LITERACY_DECAY"
-					value = -1
+			if = {
+				limit = {
+					is_pop_type = aristocrats
 				}
+				multiply = {
+					value = 5
+					desc = "QUALIFICATIONS_FAVORED_TYPE"
+				}
+			}
+			if = {
+				limit = {
+					religion_accepted = no
+				}
+				multiply = {
+					value = 0.05
+					desc = "POTENTIALS_RELIGIOUS_DISCRIMINATION"
+				}
+			}
+			if = {
+				limit = {
+					is_peasant_under_serfdom = yes
+				}
+				multiply = {
+					value = 0.1
+					desc = "QUALIFICATIONS_PEASANTS_UNDER_SERFDOM"
+				}
+			}
+			if = {
+				limit = {
+					religion = rel:atheist
+				}
+				multiply = {
+					value = 0.1
+					desc = "ATHEIST_CLERGYMEN"
+				}
+			}
+		}
+		else = {		
+			value = {
+				desc = "QUALIFICATIONS_INSUFFICIENT_LITERACY_DECAY"
+				value = -1
 			}
 		}
 	}

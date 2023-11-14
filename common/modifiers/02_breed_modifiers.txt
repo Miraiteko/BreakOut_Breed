@@ -9,11 +9,13 @@ breed_ratio_bonus_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_positive.dds
 	state_birth_rate_mult = 1
 	state_working_adult_ratio_add = -0.15
+	#breeders_state_birth_rate_mult = -0.6 #新版本之后添加，抚育者人群本身受抚育效率的影响较小。
 }
 breed_ratio_penalty_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
 	state_birth_rate_mult = -1
 	state_working_adult_ratio_add = 0.15
+	#breeders_state_birth_rate_mult = 0.6 #新版本之后添加，抚育者人群本身受抚育效率的影响较小。
 }
 
 
