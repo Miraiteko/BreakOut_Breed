@@ -7,5 +7,5 @@ tags={
 	"Total Conversion"
 }
 name="生生不息"
-supported_version="0.*.*"
+supported_version="1.5.*"
 path="D:/Documents/Paradox Interactive/Victoria 3/mod/BreakOut_Breed"
