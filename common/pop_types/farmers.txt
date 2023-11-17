@@ -28,22 +28,33 @@
 			}
 		}
 		else_if = {
-			limit = {
-				is_peasant_under_serfdom = no 
-				is_pop_type = laborers
-			}
+			# baseline: wealth (max 30) / 2, norm 10 for Peasants with Wealth 10
 			add = {
-				value = 5
-				desc = "QUALIFICATIONS_FAVORED_TYPE"
+				value = wealth
+				max = 30
+				divide = 2
+				desc = "QUALIFICATIONS_WEALTH_FACTOR"
 			}
-		}
-		else_if = {
-			limit = { 
-				is_peasant_under_serfdom = yes 
+			if = {
+				limit = {
+					OR = {
+						is_pop_type = peasants
+						is_pop_type = laborers
+					}
+				}
+				multiply = {
+					value = 2
+					desc = "QUALIFICATIONS_FAVORED_TYPE"
+				}
 			}
-			value = {
-				desc = "QUALIFICATIONS_PEASANTS_UNDER_SERFDOM"
-				value = 0
+			if = {
+				limit = {
+					is_peasant_under_serfdom = yes
+				}
+				multiply = {
+					value = 0.2
+					desc = "QUALIFICATIONS_PEASANTS_UNDER_SERFDOM"
+				}
 			}
 		}
 	}

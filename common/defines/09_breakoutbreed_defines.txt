@@ -64,9 +64,22 @@ NPops = {
 
 	#人口征税能力开支增加
 	INDIVIDUALS_TAXED_PER_TAX_CAPACITY = 8000 # from 10000
-} 
-### End Pop Growth Constant defines
 
+	#工作满意度相关
+	JOB_SATISFACTION_BASE = -200							# Base job satisfaction
+	JOB_SATISFACTION_FOR_NEWLY_HIRED = 0					# Job satisfaction gained due to having been newly hired, this state lasts until the pop's next wealth calculation
+	JOB_SATISFACTION_PER_SOL_ABOVE_EXPECTED_SOL = 1			# Job satisfaction gained per level of SoL above your expected SoL
+	JOB_SATISFACTION_PER_SOL_ABOVE_STATE_STRATA_SOL = 3		# Job satisfaction gained per level of SoL above the state average for your strata
+	JOB_SATISFACTION_PER_SOL_ABOVE_COUNTRY_STRATA_SOL = 2	# Job satisfaction gained per level of SoL above the country average for your strata
+	JOB_SATISFACTION_PER_PERCENT_WAGE_RATE_ABOVE_NORMAL = 2	# Job satisfaction gained per pound of workplace wage rate (weekly wage of 10k laborers) above country normal
+	JOB_SATISFACTION_CAN_AFFORD_EXPENSES_THRESHOLD = 1.2	# If a pop's income is greater than this value times their expenses they are considered to be able to afford them
+	JOB_SATISFACTION_CANNOT_AFFORD_EXPENSES_THRESHOLD = 0.8	# If a pop's income is less than this value times their expenses they are considered not able to afford them
+	JOB_SATISFACTION_FROM_CAN_AFFORD_EXPENSES = 100		# Job satisfaction gained from being able to afford your bug package (and taxes)
+	JOB_SATISFACTION_FROM_CAN_BARELY_AFFORD_EXPENSES = 0	# Job satisfaction gained from being able to barely afford your bug package (and taxes)
+	JOB_SATISFACTION_FROM_CANNOT_AFFORD_EXPENSES = -100		# Job satisfaction gained from not being able to afford your bug package (and taxes)
+	JOB_SATISFACTION_PER_PERCENT_HIGHER_STRATA_QUALIFICATION = -3 # Job satisfaction gained per percent of workforce qualified for a higher strata. Note that qualifications are assumed to overlap and the largest qualification is used in this calculation
+	JOB_SATISFACTION_FROM_EMPLOYMENT = 100					# Job satisfaction gained from having a job
+} 
 NPolitics = {
 	#人口行政力开支翻倍
 	STATE_BUREAUCRACY_POP_MULTIPLE = 80000	# from 100000

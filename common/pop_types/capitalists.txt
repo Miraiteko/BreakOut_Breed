@@ -5,8 +5,7 @@
 	start_quality_of_life = 20
 	wage_weight = 6
 	literacy_target = 0.70
-	ignores_employment_proportionality = no
-	dependent_wage = 0.5	# per year
+	dependent_wage = 0.0	# per year
 	unemployment = yes
 	
 	# 70% - 100% politically engaged
@@ -53,13 +52,13 @@
 		else_if = {
 			limit = {
 				is_peasant_under_serfdom = no 
-				wealth > 25
+				wealth > 15
 			}
-			# baseline: ( wealth - 25 ) / 150 + ( literacy * 2 ), norm 2 for Wealth 20 and Literacy 50%
+			# baseline: ( wealth - 15 ) / 15 + ( literacy * 2 )
 			add = {
 				value = wealth
-				subtract = 25
-				divide = 5
+				subtract = 15
+				divide = 15
 				desc = "QUALIFICATIONS_WEALTH_FACTOR"
 			}
 			add = {
