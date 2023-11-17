@@ -1,0 +1,242 @@
+﻿#货运红利结算
+production_merchant_profit_monthly_check = {	
+	save_scope_as = checked_state
+	
+	set_variable = {
+		name = total_merchant_profit
+		value = 0
+	}
+	if = {
+		limit = { 
+			#market_access < 1 
+			always = yes
+		}
+		
+		add_good_merchant_profit = {
+			GOOD = "breed"
+		}
+		add_good_merchant_profit = {
+			GOOD = "elite_breed"
+		}
+		add_good_merchant_profit = {
+			GOOD = "investment_management"
+		}
+		#add_good_merchant_profit = {
+		#	GOOD = "services"
+		#}
+		add_good_merchant_profit = {
+			GOOD = "fine_art"
+		}
+		add_good_merchant_profit = {
+			GOOD = "furniture"
+		}
+		add_good_merchant_profit = {
+			GOOD = "clothes"
+		}
+		add_good_merchant_profit = {
+			GOOD = "tools"
+		}
+		add_good_merchant_profit = {
+			GOOD = "glass"
+		}
+		add_good_merchant_profit = {
+			GOOD = "steel"
+		}
+		add_good_merchant_profit = {
+			GOOD = "liquor"
+		}
+		add_good_merchant_profit = {
+			GOOD = "groceries"
+		}
+		add_good_merchant_profit = {
+			GOOD = "luxury_clothes"
+		}
+		add_good_merchant_profit = {
+			GOOD = "luxury_furniture"
+		}
+		add_good_merchant_profit = {
+			GOOD = "porcelain"
+		}
+		add_good_merchant_profit = {
+			GOOD = "fertilizer"
+		}
+		add_good_merchant_profit = {
+			GOOD = "explosives"
+		}
+		add_good_merchant_profit = {
+			GOOD = "ammunition"
+		}
+		add_good_merchant_profit = {
+			GOOD = "artillery"
+		}
+		add_good_merchant_profit = {
+			GOOD = "engines"
+		}
+		add_good_merchant_profit = {
+			GOOD = "clippers"
+		}
+		add_good_merchant_profit = {
+			GOOD = "steamers"
+		}
+		add_good_merchant_profit = {
+			GOOD = "manowars"
+		}
+		add_good_merchant_profit = {
+			GOOD = "ironclads"
+		}
+		add_good_merchant_profit = {
+			GOOD = "automobiles"
+		}
+		add_good_merchant_profit = {
+			GOOD = "aeroplanes"
+		}
+		add_good_merchant_profit = {
+			GOOD = "tanks"
+		}
+		add_good_merchant_profit = {
+			GOOD = "radios"
+		}
+		add_good_merchant_profit = {
+			GOOD = "telephones"
+		}
+		add_good_merchant_profit = {
+			GOOD = "grain"
+		}
+		add_good_merchant_profit = {
+			GOOD = "fish"
+		}
+		add_good_merchant_profit = {
+			GOOD = "meat"
+		}
+		add_good_merchant_profit = {
+			GOOD = "fruit"
+		}
+		add_good_merchant_profit = {
+			GOOD = "wine"
+		}
+		add_good_merchant_profit = {
+			GOOD = "fabric"
+		}
+		add_good_merchant_profit = {
+			GOOD = "wood"
+		}
+		add_good_merchant_profit = {
+			GOOD = "sugar"
+		}
+		add_good_merchant_profit = {
+			GOOD = "coal"
+		}
+		add_good_merchant_profit = {
+			GOOD = "iron"
+		}
+		add_good_merchant_profit = {
+			GOOD = "lead"
+		}
+		add_good_merchant_profit = {
+			GOOD = "oil"
+		}
+		add_good_merchant_profit = {
+			GOOD = "sulfur"
+		}
+		add_good_merchant_profit = {
+			GOOD = "hardwood"
+		}
+		add_good_merchant_profit = {
+			GOOD = "rubber"
+		}
+		add_good_merchant_profit = {
+			GOOD = "coffee"
+		}
+		add_good_merchant_profit = {
+			GOOD = "dye"
+		}
+		add_good_merchant_profit = {
+			GOOD = "opium"
+		}
+		add_good_merchant_profit = {
+			GOOD = "tea"
+		}
+		add_good_merchant_profit = {
+			GOOD = "silk"
+		}
+		add_good_merchant_profit = {
+			GOOD = "tobacco"
+		}
+		add_good_merchant_profit = {
+			GOOD = "small_arms"
+		}
+		add_good_merchant_profit = {
+			GOOD = "paper"
+		}
+		#add_good_merchant_profit = {
+		#	GOOD = "electricity"
+		#}
+		#add_good_merchant_profit = {
+		#	GOOD = "transportation"
+		#}
+	}
+	
+	#计算地区货运者数量变化
+	set_variable = {
+		name = state_merchant
+		value = infrastructure
+	}
+	#或许应该用地区产出的merchant_profit比例来计算
+
+
+	remove_modifier = state_merchant_profit_modifier_positive
+	remove_modifier = state_merchant_profit_modifier_negative
+	if = {
+		limit = { state_merchant_profit_bonus > 0 }
+		add_modifier = {
+			name = state_merchant_profit_modifier_positive
+			multiplier = state_merchant_profit_bonus
+		}
+	}
+	else = {
+		add_modifier = {
+			name = state_merchant_profit_modifier_negative
+			multiplier = state_merchant_profit_bonus
+		}
+	}
+}
+add_good_merchant_profit = {
+	if = {
+		limit = {
+			sg:$GOOD$.state_goods_pricier > market.mg:$GOOD$.market_goods_pricier
+		}
+		set_variable = {
+			name = price_diff
+			value = sg:$GOOD$.state_goods_pricier 
+		}
+		change_variable = {
+			name = price_diff
+			subtract = market.mg:$GOOD$.market_goods_pricier
+		}
+		change_variable = {
+			name = price_diff
+			multiply = sg:$GOOD$.state_goods_consumption
+		}
+	}
+	else_if = {
+		limit = {
+			sg:$GOOD$.state_goods_pricier < market.mg:$GOOD$.market_goods_pricier
+		}
+		set_variable = {
+			name = price_diff
+			value = market.mg:$GOOD$.market_goods_pricier
+		}
+		change_variable = {
+			name = price_diff
+			subtract = sg:$GOOD$.state_goods_pricier 
+		}
+		change_variable = {
+			name = price_diff
+			multiply = sg:$GOOD$.state_goods_production
+		}
+	}
+	change_variable = {
+		name = total_merchant_profit
+		add = var:price_diff
+	}
+}
