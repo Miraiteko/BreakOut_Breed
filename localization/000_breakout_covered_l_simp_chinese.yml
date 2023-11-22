@@ -6,8 +6,6 @@
  QUALIFICATIONS_PEASANTS_UNDER_SERFDOM:"由于[Pop.GetPopType.GetName]职业过于低贱"
 
  #需求表
- popneed_health:"健康"
- popneed_luxury_clothing:"体面衣物"
  popneed_intoxicants:"满足感"
  popneed_services:"便利生活"
  popneed_art:"投资"
