@@ -17,7 +17,7 @@ breeders_ratio_monthly_check = {
 	if = {	
 		limit = {
 			pop_type_percent_state = {
-				target = breeders
+				target = pop_type:breeders
 				value < var:min_breeders_ratio
 			}
 		}
@@ -40,7 +40,7 @@ breeders_ratio_monthly_check = {
 	else_if = { #如果抚育者人口比例高于上限
 		limit = {
 			pop_type_percent_state = {
-				target = breeders
+				target = pop_type:breeders
 				value > var:max_breeders_ratio
 			}
 		}
