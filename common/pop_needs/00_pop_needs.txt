@@ -310,7 +310,7 @@ popneed_intoxicants = {
 	}
 	entry = {
 		goods = elite_breed
-		weight = 1
+		weight = 2
 		max_weight = 50.0
 		min_weight = 0
 	}
@@ -328,13 +328,6 @@ popneed_intoxicants = {
 		weight = 10
 		max_weight = 30.0
 		min_weight = 0.1
-	}
-	entry = {
-		goods = fine_art
-		
-		weight = 5
-		max_weight = 20.0 # Maxes out at 60% of supply share
-		min_weight = 0.0
 	}
 	
 	entry = {
@@ -363,12 +356,12 @@ popneed_art = {
 		
 		weight = 30
 		max_weight = 150.0
-		min_weight = 1
+		min_weight = 0.1
 	}
 	entry = {
 		goods = elite_breed
 		weight = 5
 		max_weight = 50.0
-		min_weight = 0
+		min_weight = 1.0
 	}
 }
