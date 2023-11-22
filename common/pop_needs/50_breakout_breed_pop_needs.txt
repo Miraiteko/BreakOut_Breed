@@ -1,141 +1,8 @@
 ﻿# goods						The good being referenced
 # weight					The base weight that is applied to this good based on market Sell Order share
-# max_weight				The maximum weight that can be applied to this good based on market Sell Order share, only meaningful in relation to weight
-# min_weight				The minimum weight that can be applied to this good based on market Sell Order share, only meaningful in relation to weight
+# max_supply_share			The maximum weight that can be applied to this good based on market Sell Order share, relative supply above this amount will have no further impact on base weight
+# min_supply_share			If above 0, a minimum of this multiplier of the base weight will be applied to a good regardless of its market Sell Order share
 
-popneed_heating = {
-	default = wood
-	
-	entry = {
-		goods = fabric
-		
-		weight = 0.3
-		max_weight = 3.0 # Maxes out at 60% of supply share
-		min_weight = 0.0
-	}	
-	
-	entry = {
-		goods = oil
-		
-		weight = 0.3
-		max_weight = 3.0 # Maxes out at 60% of supply share
-		min_weight = 0.0
-	}
-	entry = {
-		goods = wood
-		
-		weight = 1
-		max_weight = 3.0 # Maxes out at 60% of supply share
-		min_weight = 0.0
-	}
-	entry = {
-		goods = coal
-		
-		weight = 2
-		max_weight = 5.0 # Maxes out at 60% of supply share
-		min_weight = 0.1
-	}
-	
-	entry = {
-		goods = electricity
-		
-		weight = 3
-		max_weight = 10.0 # Maxes out at 100% of supply share
-		min_weight = 0.1
-	}
-}
-
-popneed_basic_food = {
-	default = grain
-
-	entry = {
-		goods = grain
-		
-		weight = 1
-		max_weight = 4.0 # Maxes out at 80% of supply share
-		min_weight = 0.0
-	}
-	
-	entry = {
-		goods = fish
-		
-		weight = 1.0
-		max_weight = 2.0 # Maxes out at 80% of supply share
-		min_weight = 0.0
-	}
-	
-	entry = {
-		goods = fruit
-		
-		weight = 0.5
-		max_weight = 2.0 # Maxes out at 80% of supply share
-		min_weight = 0.0
-	}
-	
-	entry = {
-		goods = groceries
-		
-		weight = 1
-		max_weight = 4.0 # Maxes out at 80% of supply share
-		min_weight = 0.0
-	}
-}
-
-popneed_luxury_food = {
-	default = meat
-	
-	entry = {
-		goods = meat
-		
-		weight = 1
-		max_weight = 2.0 # Maxes out at 40% of supply share
-		min_weight = 0.0
-	}
-	
-	entry = {
-		goods = fruit
-		
-		weight = 1
-		max_weight = 2.0 # Maxes out at 40% of supply share
-		min_weight = 0.0
-	}
-	
-	entry = {
-		goods = groceries
-		
-		weight = 1
-		max_weight = 2.0 # Maxes out at 40% of supply share
-		min_weight = 0.0
-	}
-	
-	entry = {
-		goods = sugar
-		
-		weight = 0.5
-		max_weight = 2.0 # Maxes out at 80% of supply share
-		min_weight = 0.0
-	}
-}
-
-popneed_simple_clothing = {
-	default = fabric
-
-	entry = {
-		goods = fabric
-		
-		weight = 2
-		max_weight = 1.0 # Maxes out at 80% of supply share
-		min_weight = 0.0
-	}	
-	
-	entry = {
-		goods = clothes
-		
-		weight = 1
-		max_weight = 5.0 # Maxes out at 80% of supply share
-		min_weight = 0.1
-	}
-}
 popneed_luxury_clothing = {
 	default = clothes
 	
@@ -143,94 +10,19 @@ popneed_luxury_clothing = {
 		goods = clothes
 		
 		weight = 1
-		max_weight = 2.0 # Maxes out at 40% of supply share
-		min_weight = 0.25
+		max_supply_share = 1.0
+		min_supply_share = 0.0
 	}
 	entry = {
 		goods = luxury_clothes
 		
-		weight = 1
-		max_weight = 2.0 # Maxes out at 40% of supply share
-		min_weight = 0.25
+		weight = 2
+		max_supply_share = 1.0
+		min_supply_share = 0.0
 	}
 	
 }
-popneed_household_items = {
-	default = furniture
 
-	entry = {
-		goods = furniture
-		
-		weight = 1
-		max_weight = 4.0 # Maxes out at 80% of supply share
-		min_weight = 0.25
-	}
-	
-	entry = {
-		goods = porcelain
-		
-		weight = 1
-		max_weight = 4.0 # Maxes out at 40% of supply share
-		min_weight = 0.0
-	}
-	entry = {
-		goods = glass
-		
-		weight = 1
-		max_weight = 4.0 # Maxes out at 40% of supply share
-		min_weight = 0.1
-	}
-	
-	entry = {
-		goods = paper
-		
-		weight = 0.3
-		max_weight = 2.0 # Maxes out at 40% of supply share
-		min_weight = 0.1
-	}	
-	entry = {
-		goods = luxury_furniture
-		
-		weight = 0.1
-		max_weight = 2.0 # Maxes out at 40% of supply share
-		min_weight = 0.0
-	}	
-}
-
-
-
-popneed_luxury_items = {
-	default = luxury_furniture
-	entry = {
-		goods = luxury_furniture
-		
-		weight = 1
-		max_weight = 2.0 # Maxes out at 40% of supply share
-		min_weight = 0.25
-	}
-	entry = {
-		goods = luxury_clothes
-		
-		weight = 1
-		max_weight = 2.0 # Maxes out at 40% of supply share
-		min_weight = 0.25
-	}
-	
-	entry = {
-		goods = radios
-		
-		weight = 1
-		max_weight = 4.0 # Maxes out at 40% of supply share
-		min_weight = 0.1
-	}
-	entry = {
-		goods = automobiles
-		
-		weight = 1
-		max_weight = 4.0 # Maxes out at 40% of supply share
-		min_weight = 0.1
-	}
-}
 popneed_health = {
 	default = tea
 
@@ -238,24 +30,24 @@ popneed_health = {
 		goods = tea
 		
 		weight = 1
-		max_weight = 3.0 # Maxes out at 60% of supply share
-		min_weight = 0.0
+		max_supply_share = 0.75
+		min_supply_share = 0.0
 	}
 	
 	entry = {
 		goods = coffee
 		
 		weight = 1
-		max_weight = 3.0 # Maxes out at 60% of supply share
-		min_weight = 0.0
+		max_supply_share = 0.75
+		min_supply_share = 0.0
 	}
 	
 	entry = {
 		goods = wine
 		
 		weight = 1
-		max_weight = 3.0 # Maxes out at 60% of supply share
-		min_weight = 0.1
+		max_supply_share = 0.75
+		min_supply_share = 0.0
 	}
 }
 
@@ -265,77 +57,53 @@ popneed_services = {
 	entry = {
 		goods = services
 		weight = 2.0
-		max_weight = 4.0
-		min_weight = 1.0
+		max_supply_share = 0.75
+		min_supply_share = 0.25
 	}
-	
 	entry = {
 		goods = elite_breed
 		weight = 2.0
-		max_weight = 4.0
-		min_weight = 0.0
-	}
-
-	entry = {
-		goods = telephones
-		
-		weight = 1
-		max_weight = 4.0 # Maxes out at 80% of supply share
-		min_weight = 0.1
-	}
-	entry = {
-		goods = transportation
-		
-		weight = 0.1
-		max_weight = 0.5 # Maxes out at 80% of supply share
-		min_weight = 0.1
-	}
-	entry = {
-		goods = automobiles
-		
-		weight = 1
-		max_weight = 1.0 # Maxes out at 40% of supply share
-		min_weight = 0.1
+		max_supply_share = 0.75
+		min_supply_share = 0.25
 	}
 }
-
 popneed_intoxicants = {
 	default = breed
 	
 	entry = {
 		goods = breed
 		weight = 5
-		max_weight = 150.0
-		min_weight = 5.0
+		max_supply_share = 1.0
+		min_supply_share = 0.25
 	}
 	entry = {
 		goods = elite_breed
 		weight = 2
-		max_weight = 50.0
-		min_weight = 0
+		max_supply_share = 1.0
+		min_supply_share = 0.0
 	}
 	entry = {
-		goods = opium
+		goods = liquor
 		
-		weight = 10
-		max_weight = 30.0
-		min_weight = 0.1
+		weight = 2
+		max_supply_share = 0.5
+		min_supply_share = 0.0
 	}
 	
 	entry = {
 		goods = tobacco
 		
-		weight = 10
-		max_weight = 30.0
-		min_weight = 0.1
+		weight = 3
+		max_supply_share = 0.5
+		min_supply_share = 0.0
 	}
 	
 	entry = {
-		goods = liquor
+		goods = opium
 		
-		weight = 1
-		max_weight = 5.0
-		min_weight = 0.1
+		weight = 5
+		max_supply_share = 0.5
+		min_supply_share = 0.0
 	}
 	
 }
@@ -347,21 +115,21 @@ popneed_art = {
 		goods = fine_art
 		
 		weight = 5
-		max_weight = 30.0 # Maxes out at 60% of supply share
-		min_weight = 1.0
+		max_supply_share = 0.75
+		min_supply_share = 0.1
 	}
 
 	entry = {
 		goods = investment_management
 		
 		weight = 30
-		max_weight = 150.0
-		min_weight = 0.1
+		max_supply_share = 1.0
+		min_supply_share = 0.0
 	}
 	entry = {
 		goods = elite_breed
 		weight = 5
-		max_weight = 50.0
-		min_weight = 1.0
+		max_supply_share = 0.75
+		min_supply_share = 0.1
 	}
 }
