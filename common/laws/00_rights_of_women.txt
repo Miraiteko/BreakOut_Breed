@@ -342,8 +342,8 @@ law_womens_suffrage = {
 					state = {
 						turmoil > 0.25
 					}
-				}
 					is_pop_type = breeders
+				}
 				value = 10.0
 			}
 		}

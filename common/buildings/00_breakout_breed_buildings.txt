@@ -12,7 +12,7 @@
 		pmg_breed_center_ownership
 	}
 
-	required_construction = construction_cost_middle
+	required_construction = construction_cost_medium
 	
 	ai_value = 2500
 	
