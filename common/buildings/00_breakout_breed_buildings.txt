@@ -32,6 +32,8 @@ village_house = {
 	expandable = no
 	downsizeable = no
 
+	slaves_role = breeders
+	
 	production_method_groups = {
 		pmg_village_house_methods
 		pmg_village_house_ownership

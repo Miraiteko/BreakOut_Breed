@@ -5,7 +5,7 @@
 	category = production
 		
 	modifier = {
-		state_village_house_max_level_add = 2
+		state_village_house_max_level_add = 2.5
 	}
 	ai_weight = {
 		value = 3 # Very important tech in general
@@ -24,7 +24,7 @@ intensive_agriculture = {
 	}
 	
 	modifier = {
-		state_village_house_max_level_add = 2
+		state_village_house_max_level_add = 2.5
 	}
 
 	ai_weight = {
@@ -52,7 +52,7 @@ threshing_machine = {
 	}
 	
 	modifier = {
-		state_village_house_max_level_add = 2
+		state_village_house_max_level_add = 2.5
 	}
 
 	ai_weight = {
@@ -80,7 +80,7 @@ mechanized_farming = {
 	}
 	
 	modifier = {
-		state_village_house_max_level_add = 2
+		state_village_house_max_level_add = 2.5
 	}
 
 	
