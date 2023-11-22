@@ -125,32 +125,3 @@
  modifier_building_base_education_access_add_desc:"该建筑产生的劳动力的[concept_base_education_access]"
  
  base_education_access_modifier:"[concept_base_education_access]"
-
- #其他嗜好商品相关
- gambling:"博彩"
- modifier_goods_output_gambling_add:"每级@gambling!博彩产出"
- modifier_goods_output_gambling_add_desc:"建筑产出的@gambling!博彩数量"
- modifier_goods_input_gambling_add:"每级@gambling!博彩投入"
- modifier_goods_input_gambling_add_desc:"建筑投入的@gambling!博彩数量"
- 
- casino:"地下赌场"
- bg_illegal:"不法场所"
- modifier_building_group_bg_illegal_throughput_mult:"不法场所吞吐量"
- modifier_building_group_bg_illegal_throughput_mult_desc:"对不法场所的吞吐量的修正"
- modifier_goods_output_liquor_mult:"建筑@liquor!烈酒产出"
- modifier_goods_output_liquor_mult_desc:"对建筑产出的@liquor!烈酒数量的增益或惩罚"
- modifier_goods_output_tobacco_mult:"建筑@tobacco!烟草产出"
- modifier_goods_output_tobacco_mult_desc:"对建筑产出的@tobacco!烟草数量的增益或惩罚"
- modifier_goods_output_gambling_mult:"建筑@gambling!博彩产出"
- modifier_goods_output_gambling_mult_desc:"对建筑产出的@gambling!博彩数量的增益或惩罚"
- modifier_goods_output_opium_mult:"建筑@opium!鸦片产出"
- modifier_goods_output_opium_mult_desc:"对建筑产出的@opium!鸦片数量的增益或惩罚"
- pmg_casino:"赌场"
- pm_casino:"赌场"
- 
- TOTAL_ILLEGAL_BUILDINGS:"#v $bg_illegal$#!规模："
-
- 
- institution_social_climate:"社会监管"
- modifier_country_institution_social_climate_max_investment_add:"最大$institution_social_climate$[concept_institution]投入等级"
- modifier_country_institution_social_climate_max_investment_add_desc:"对$institution_social_climate$[concept_institution]的最大投入等级的修正"
