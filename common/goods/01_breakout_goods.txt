@@ -1,7 +1,7 @@
 ﻿#抚育
 breed = {
 	texture = "gfx/interface/icons/goods_icons/breed.dds"
-	cost = 25
+	cost = 40
 	category = staple
 	tradeable = no
 	

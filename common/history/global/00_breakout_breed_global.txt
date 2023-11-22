@@ -124,5 +124,15 @@ GLOBAL = {
 				reserves = 0
 			}
 		}
+		else_if = {
+			limit = {
+				total_urbanization > 0
+			}
+			create_building={
+				building="breed_center"
+				level = 1
+				reserves = 0
+			}
+		}
 	}
 }
