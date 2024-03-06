@@ -116,7 +116,7 @@ GLOBAL = {
 		}
 		else_if = {
 			limit = {
-				total_urbanization > 100
+				total_urbanization >= 120
 			}
 			create_building={
 				building="breed_center"
@@ -126,7 +126,7 @@ GLOBAL = {
 		}
 		else_if = {
 			limit = {
-				total_urbanization > 0
+				total_urbanization >= 95
 			}
 			create_building={
 				building="breed_center"
