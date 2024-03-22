@@ -8,7 +8,7 @@ pm_serfdom_breed = {
 	building_modifiers = {
 		workforce_scaled = {
 			goods_output_breed_add = 6 #25
-			building_breed_power_add = 50
+			#building_breed_power_add = 50
 			#building_production_exp_growth_add = 0.001
 		}	
 		level_scaled = {
@@ -20,6 +20,7 @@ pm_serfdom_breed = {
 	}		
 	state_modifiers = {
 		workforce_scaled = {
+			state_breed_power_add = 50
 		}	
 	}
 }
@@ -35,7 +36,7 @@ pm_tradition_breed = {
 			goods_input_services_add = 2 #30
 			goods_output_breed_add = 6 #25
 			goods_output_elite_breed_add = 2 #100
-			building_breed_power_add = 50
+			#building_breed_power_add = 50
 			#building_production_exp_growth_add = 0.001
 		}	
 		level_scaled = {
@@ -48,6 +49,7 @@ pm_tradition_breed = {
 	}		
 	state_modifiers = {
 		workforce_scaled = {
+			state_breed_power_add = 50
 		}	
 	}	
 	required_input_goods = services
@@ -61,7 +63,7 @@ pm_tradition_breed_breed_center = {
 			goods_input_services_add = 2 #30
 			goods_output_breed_add = 5 #25
 			goods_output_elite_breed_add = 3 #100
-			building_breed_power_add = 50
+			#building_breed_power_add = 50
 			#building_production_exp_growth_add = 0.001
 		}	
 		level_scaled = {
@@ -74,6 +76,7 @@ pm_tradition_breed_breed_center = {
 	}		
 	state_modifiers = {
 		workforce_scaled = {
+			state_breed_power_add = 50
 		}	
 	}	
 }
@@ -92,7 +95,7 @@ pm_elite_breed = {
 			goods_input_services_add = 3 #30
 			goods_output_breed_add = 4 #25
 			goods_output_elite_breed_add = 6 #100
-			building_breed_power_add = 50
+			#building_breed_power_add = 50
 			#building_production_exp_growth_add = 0.0015
 			
 		}	
@@ -107,6 +110,7 @@ pm_elite_breed = {
 	}		
 	state_modifiers = {
 		workforce_scaled = {
+			state_breed_power_add = 50
 		}	
 	}		
 }

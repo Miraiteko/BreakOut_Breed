@@ -87,13 +87,9 @@ breed_power_monthly_check = {
 		name = state_breed_power
 		value = 0
 	}
-	every_scope_building = {
-		state = {
-			change_variable = {
-				name = state_breed_power
-				add = prev.modifier:building_breed_power_add
-			}
-		}
+	change_variable = {
+		name = state_breed_power
+		add = modifier:state_breed_power_add
 	}
 	set_variable = {
 		name = state_breed_ratio
