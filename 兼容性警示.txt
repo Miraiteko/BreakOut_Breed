@@ -1,9 +1,11 @@
 修改了以下原版文件
 common\laws\00_rights_of_women.txt女性权力
 common\pop_types为所有职业添加了资质限制，阻止它们和抚育者之间的随意转化
+common\interest_groups\00_industrialists.txt橙工厂对银行家有着极高的吸引力
 
 
 修改了以下原版词条
+common\modifiers:base_values银行家基础投资池贡献比例
 common\defines:NPops生育死亡率相关、劳动力比例相关、人口征税能力相关、工作满意度相关
 common\defines:NPolitics人口行政力开支相关
 common\defines:NEconomy建造力投入相关

@@ -45,6 +45,14 @@ building_employment_laborers_mult = {
 	good = no
 	percent = yes
 }
+building_employment_bankers_add = {
+	good = no
+	percent = no
+}
+building_employment_bankers_mult = {
+	good = no
+	percent = yes
+}
 building_employment_machinists_mult = {
 	good = no
 	percent = yes
@@ -63,7 +71,8 @@ building_breeders_mortality_mult = {
 	good = no
 	percent = yes
 }
-building_capitalists_investment_pool_contribution_add = {
-	good = yes
-	percent = yes
-}
+#投资池
+#building_capitalists_investment_pool_contribution_add = {
+#	good = yes
+#	percent = yes
+#}
