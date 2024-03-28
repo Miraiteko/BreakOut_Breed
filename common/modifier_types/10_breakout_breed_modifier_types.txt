@@ -35,7 +35,6 @@ goods_input_services_add = {
 	percent = no
 }
 
-
 #劳动力
 building_employment_breeders_add = {
 	good = no
