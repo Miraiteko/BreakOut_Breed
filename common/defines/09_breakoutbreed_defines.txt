@@ -1,8 +1,8 @@
-﻿@breakout_pop_growth = 0.0025	#基础出生率
+﻿@breakout_pop_growth = 0.0022	#基础出生率
 @breakout_max_mortality = 0.008333 #基础死亡率 #10%，成人平均寿命10
 
 #各分段关键点死亡率
-@breakout_sol_equilibrium = 5
+@breakout_sol_equilibrium = 3
 @breakout_mortality_at_equilibrium = 0.00208  #2.5%，成人平均寿命40
 
 @breakout_sol_delta_cap = 25
