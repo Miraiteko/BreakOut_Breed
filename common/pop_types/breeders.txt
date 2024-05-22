@@ -7,7 +7,7 @@
 	#subsistence_income = yes
 	start_quality_of_life = 5
 	wage_weight = 0.5
-	dependent_wage = 0.1
+	dependent_wage = 0.5
 	unemployment = yes
 	
 	qualifications_growth_desc = "BREEDERS_QUALIFICATIONS_DESC"

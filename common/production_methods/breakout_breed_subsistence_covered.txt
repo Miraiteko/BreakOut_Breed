@@ -20,7 +20,7 @@
 	}
 	state_modifiers = {
 		level_scaled = {
-			state_village_house_max_level_add = 1.2
+			state_village_house_max_level_add = 1.0
 		}
 	}
 }
@@ -48,7 +48,7 @@ pm_serfdom = {
 	}
 	state_modifiers = {
 		level_scaled = {
-			state_village_house_max_level_add = 1.5
+			state_village_house_max_level_add = 1.2
 		}
 	}
 }		
@@ -77,7 +77,7 @@ pm_serfdom_building_subsistence_orchards = {
 	}
 	state_modifiers = {
 		level_scaled = {
-			state_village_house_max_level_add = 1.5
+			state_village_house_max_level_add = 1.2
 		}
 	}
 }		
@@ -108,7 +108,7 @@ pm_serfdom_building_subsistence_pastures = {
 	}
 	state_modifiers = {
 		level_scaled = {
-			state_village_house_max_level_add = 1.5
+			state_village_house_max_level_add = 1.2
 		}
 	}
 }
@@ -136,7 +136,7 @@ pm_serfdom_building_subsistence_fishing_villages = {
 	}
 	state_modifiers = {
 		level_scaled = {
-			state_village_house_max_level_add = 1.5
+			state_village_house_max_level_add = 1.2
 		}
 	}
 }		
@@ -165,7 +165,7 @@ pm_serfdom_building_subsistence_rice_paddies = {
 	}
 	state_modifiers = {
 		level_scaled = {
-			state_village_house_max_level_add = 2.0
+			state_village_house_max_level_add = 1.5
 		}
 	}
 }

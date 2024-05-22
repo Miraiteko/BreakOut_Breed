@@ -62,7 +62,8 @@ base_values = {
 #初始效果
 breakout_breed_initial = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	state_village_house_max_level_add = 1
+	#state_village_house_max_level_add = 0
+	building_group_bg_village_house_employee_mult = -0.6
 }
 
 #生育率

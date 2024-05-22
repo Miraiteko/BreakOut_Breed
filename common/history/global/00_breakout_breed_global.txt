@@ -1,76 +1,11 @@
 ﻿# This is executed last among all history
 GLOBAL = {
 	every_state = {
-		if = {
-			limit = { state_population > 30000000 }
-			add_modifier = {
-				name = breakout_breed_initial
-				multiplier = 2000
-				days = 3
-				is_decaying = yes
-			}
-		}
-		if = {
-			limit = { state_population > 10000000 }
-			add_modifier = {
-				name = breakout_breed_initial
-				multiplier = 700
-				days = 3
-				is_decaying = yes
-			}
-		}
-		else_if = {
-			limit = { state_population > 3000000 }
-			add_modifier = {
-				name = breakout_breed_initial
-				multiplier = 200
-				days = 3
-				is_decaying = yes
-			}
-		}
-		else_if = {
-			limit = { state_population > 1000000 }
-			add_modifier = {
-				name = breakout_breed_initial
-				multiplier = 70
-				days = 3
-				is_decaying = yes
-			}
-		}
-		else_if = {
-			limit = { state_population > 300000 }
-			add_modifier = {
-				name = breakout_breed_initial
-				multiplier = 20
-				days = 3
-				is_decaying = yes
-			}
-		}
-		else_if = {
-			limit = { state_population > 100000 }
-			add_modifier = {
-				name = breakout_breed_initial
-				multiplier = 7
-				days = 3
-				is_decaying = yes
-			}
-		}
-		else_if = {
-			limit = { state_population > 30000 }
-			add_modifier = {
-				name = breakout_breed_initial
-				multiplier = 2
-				days = 3
-				is_decaying = yes
-			}
-		}
-		else = {
-			add_modifier = {
-				name = breakout_breed_initial
-				multiplier = 1
-				days = 3
-				is_decaying = yes
-			}
+		#初始抚育者数量平衡机制
+		add_modifier = {
+			name = breakout_breed_initial
+			days = 3
+			is_decaying = yes
 		}
 		if = {
 			limit = {
