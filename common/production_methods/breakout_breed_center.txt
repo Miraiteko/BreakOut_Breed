@@ -21,6 +21,9 @@ pm_serfdom_breed = {
 		workforce_scaled = {
 			state_breed_power_add = 50
 		}	
+		unscaled = {
+			
+		}
 	}
 }
 pm_tradition_breed = {
@@ -39,7 +42,6 @@ pm_tradition_breed = {
 			building_employment_breeders_add = 9000
 		}
 		unscaled = {
-			#building_production_exp_cap_add = 0.2
 			building_breeders_mortality_mult = 0.15
 		}
 	}		
@@ -47,9 +49,10 @@ pm_tradition_breed = {
 		workforce_scaled = {
 			state_breed_power_add = 50
 		}	
+		unscaled = {
+			
+		}
 	}	
-	required_input_goods = services
-	required_input_goods = transportation
 }	
 
 pm_tradition_breed_breed_center = {

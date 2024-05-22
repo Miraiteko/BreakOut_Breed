@@ -65,6 +65,8 @@
  modifier_goods_input_elite_breed_add_desc:"建筑投入的@elite_breed!$elite_breed$数量"
 
  village_house:"村居"
+ modifier_building_group_bg_village_house_tax_mult:"村居税收"
+ modifier_building_group_bg_village_house_tax_mult_desc:"对村居建筑税收的增益或惩罚"
  pmg_village_house_methods:"劳动力"
  pm_serfdom_breed:"妇女剥削"
  pm_tradition_breed:"多子多福"

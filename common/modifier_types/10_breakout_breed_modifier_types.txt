@@ -70,6 +70,11 @@ building_breeders_mortality_mult = {
 	good = no
 	percent = yes
 }
+#村居税收
+building_group_bg_village_house_tax_mult = {
+	good = no
+	percent = yes
+}
 #投资池
 #building_capitalists_investment_pool_contribution_add = {
 #	good = yes

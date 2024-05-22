@@ -12,7 +12,7 @@
 			building_employment_shopkeepers_add = 700
 		}
 		unscaled = {
-			building_shopkeepers_shares_add = 0.1
+			building_shopkeepers_shares_add = 0.5
 			building_bankers_shares_add = 1
 		}
 	}		
@@ -40,7 +40,7 @@ pm_mutual_funds = {
 			building_employment_shopkeepers_add = 400
 		}
 		unscaled = {
-			building_shopkeepers_shares_add = 0.1
+			building_shopkeepers_shares_add = 0.5
 			building_bankers_shares_add = 1
 		}
 	}		
@@ -68,7 +68,7 @@ pm_modern_financial_instruments = {
 			building_employment_shopkeepers_add = 100
 		}
 		unscaled = {
-			building_shopkeepers_shares_add = 0.1
+			building_shopkeepers_shares_add = 0.5
 			building_bankers_shares_add = 1
 		}
 	}		

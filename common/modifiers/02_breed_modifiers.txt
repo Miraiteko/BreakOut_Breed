@@ -25,7 +25,7 @@ base_values = {
 	state_poor_expected_sol = 5
 	state_middle_expected_sol = 10
 	state_rich_expected_sol = 15
-	state_expected_sol_from_literacy = 5
+	state_expected_sol_from_literacy = 10
 	
 	state_farmers_investment_pool_contribution_add = 0.05
 	state_shopkeepers_investment_pool_contribution_add = 0.05
@@ -57,6 +57,7 @@ base_values = {
 	state_urbanization_per_level_add = 100
 	
 	unit_experience_gain_add = 1.0
+	building_group_bg_village_house_tax_mult = -1
 }
 #初始效果
 breakout_breed_initial = {
