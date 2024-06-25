@@ -30,7 +30,16 @@ law_no_womens_rights = {
 		literacy_rate < 0.4
 		exists = ruler
 		ruler = { 
-			has_ideology = ideology_traditionalist 
+			has_ideology = ideology:ideology_traditionalist 
+		}
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
 		}
 	}
 }
@@ -105,11 +114,20 @@ law_women_own_property = {
 			AND = {
 				exists = ruler
 				ruler = { 
-					has_ideology = ideology_traditionalist 
+					has_ideology = ideology:ideology_traditionalist 
 				}		
 			}
 		}
 	}	
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
+		}
+	}
 }
 
 law_women_in_the_workplace = {
@@ -183,9 +201,9 @@ law_women_in_the_workplace = {
 						OR = {
 							has_law = law_type:law_no_womens_rights
 							has_law = law_type:law_women_own_property
-						}
+		}
 						has_technology_researched = feminism
-					}
+	}
 					is_pop_type = breeders
 				}
 				value = 1.0
@@ -234,7 +252,7 @@ law_women_in_the_workplace = {
 				}
 				value = 10.0
 			}
-			
+	
 		}
 	}
 	
@@ -245,11 +263,20 @@ law_women_in_the_workplace = {
 			AND = {
 				exists = ruler
 				ruler = { 
-					has_ideology = ideology_traditionalist 
+					has_ideology = ideology:ideology_traditionalist 
 				}		
 			}
 		}
 	}	
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
+		}
+	}
 }
 
 law_womens_suffrage = {
@@ -267,6 +294,8 @@ law_womens_suffrage = {
 		law_landed_voting
 		law_wealth_voting
 		law_universal_suffrage
+		law_single_party_state
+		law_anarchy
 	}
 	
 	on_enact = {
@@ -276,6 +305,7 @@ law_womens_suffrage = {
 	modifier = {
 		state_min_breeders_ratio_add = 0.10
 		state_max_breeders_ratio_add = 0.55
+		state_dependent_political_participation_add = 0.33
 	}
 	
 	possible_political_movements = {
@@ -346,6 +376,15 @@ law_womens_suffrage = {
 				}
 				value = 10.0
 			}
+		}
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
 		}
 	}
 }

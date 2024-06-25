@@ -3,14 +3,16 @@
 	strata = poor
 	start_quality_of_life = 7
 	color = hsv{ 0.28 0.40 0.75 }
-	wage_weight = 2
+	wage_weight = 1.5
+	paid_private_wage = yes
 	literacy_target = 0.20
+	education_access = 0.25
 	dependent_wage = 0.5	# per year
 	unemployment = yes
 	
-	# 20% - 70% politically engaged	
+	# 20% - 80% politically engaged	
 	political_engagement_base = 0.20
-	political_engagement_literacy_factor = 0.5
+	political_engagement_literacy_factor = 0.6
 	
 	political_engagement_mult = {
 		value = 1		
@@ -51,7 +53,7 @@
 				desc = "QUALIFICATIONS_MIN_BREEDERS_RATIO"
 			}
 		}
-		else ={
+		else = {
 			# baseline: literacy * 20, norm 10 for Laborers with Literacy 25%
 			add = {
 				value = literacy_rate
@@ -76,7 +78,7 @@
 					desc = "QUALIFICATIONS_PEASANTS_UNDER_SERFDOM"
 				}
 			}
-		}		
+		}
 	}
 	
 	portrait_age = {

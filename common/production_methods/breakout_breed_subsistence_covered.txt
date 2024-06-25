@@ -10,12 +10,12 @@
 		law_serfdom
 	}
 	
-	building_modifiers = {	
+	building_modifiers = {					
 		workforce_scaled = {
 			goods_input_breed_add = 1
 		}
 		unscaled = {
-			building_subsistence_output_add = 4
+			building_subsistence_output_add = 5
 		}
 	}
 	state_modifiers = {
@@ -43,7 +43,7 @@ pm_serfdom = {
 		}
 
 		unscaled = {
-			building_subsistence_output_add = 3
+			building_subsistence_output_add = 4
 		}		
 	}
 	state_modifiers = {
@@ -103,7 +103,7 @@ pm_serfdom_building_subsistence_pastures = {
 		}
 
 		unscaled = {
-			building_subsistence_output_add = 3
+			building_subsistence_output_add = 4
 		}			
 	}
 	state_modifiers = {
@@ -131,7 +131,7 @@ pm_serfdom_building_subsistence_fishing_villages = {
 		}
 
 		unscaled = {
-			building_subsistence_output_add = 3
+			building_subsistence_output_add = 4
 		}			
 	}
 	state_modifiers = {
@@ -160,7 +160,7 @@ pm_serfdom_building_subsistence_rice_paddies = {
 		}
 
 		unscaled = {
-			building_subsistence_output_add = 3
+			building_subsistence_output_add = 4
 		}			
 	}
 	state_modifiers = {

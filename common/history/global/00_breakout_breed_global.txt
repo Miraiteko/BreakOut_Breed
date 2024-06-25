@@ -1,73 +1,11 @@
 ﻿# This is executed last among all history
 GLOBAL = {
 	every_state = {
-		#初始抚育者数量平衡机制
 		add_modifier = {
 			name = breakout_breed_initial
 			days = 3
 			is_decaying = yes
 		}
-		if = {
-			limit = {
-				total_urbanization > 1000
-			}
-			create_building={
-				building="breed_center"
-				level = 15
-				reserves = 0
-			}
-			if = {
-				limit = {
-					owner ?= {
-						has_technology_researched = banking
-					}
-				}
-				create_building={
-					building="bank"
-					level = 1
-					reserves = 0
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				total_urbanization > 500
-			}
-			create_building = {
-				building="breed_center"
-				level = 10
-				reserves =0
-			}
-		}
-		else_if = {
-			limit = {
-				total_urbanization > 200
-			}
-			create_building={
-				building="breed_center"
-				level = 5
-				reserves = 0
-			}
-		}
-		else_if = {
-			limit = {
-				total_urbanization >= 120
-			}
-			create_building={
-				building="breed_center"
-				level = 2
-				reserves = 0
-			}
-		}
-		else_if = {
-			limit = {
-				total_urbanization >= 95
-			}
-			create_building={
-				building="breed_center"
-				level = 1
-				reserves = 0
-			}
-		}
+		save_scope_as = checked_state
 	}
 }

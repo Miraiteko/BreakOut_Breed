@@ -3,23 +3,11 @@
 	
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_paper_add = 30 # 30
-			goods_output_investment_management_add = 15 #100
+			goods_input_paper_add = 10 # 30
+			goods_output_investment_management_add = 5 #100
 		}	
-		level_scaled = {
-			building_employment_clerks_add = 200
-			building_employment_bankers_add = 100
-			building_employment_shopkeepers_add = 700
-		}
 		unscaled = {
-			building_shopkeepers_shares_add = 0.5
-			building_bankers_shares_add = 1
-		}
-	}		
-	state_modifiers = {
-		workforce_scaled = {
-			#state_capitalists_investment_pool_contribution_add = 0.01
-			state_political_strength_from_wealth_mult = 0.01
+			building_bankers_shares_add = 10
 		}	
 	}	
 }	
@@ -31,23 +19,15 @@ pm_mutual_funds = {
 	}	
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_paper_add = 35 # 30
-			goods_output_investment_management_add = 30 #100
+			goods_input_paper_add = 12 # 30
+			goods_output_investment_management_add = 10 #100
 		}	
 		level_scaled = {
-			building_employment_clerks_add = 400
-			building_employment_bankers_add = 200
-			building_employment_shopkeepers_add = 400
+			building_employment_bankers_add = 20
+			building_employment_capitalists_add = -20
 		}
 		unscaled = {
-			building_shopkeepers_shares_add = 0.5
-			building_bankers_shares_add = 1
-		}
-	}		
-	state_modifiers = {
-		workforce_scaled = {
-			#state_capitalists_investment_pool_contribution_add = 0.01
-			state_political_strength_from_wealth_mult = 0.01
+			building_bankers_shares_add = 15
 		}	
 	}	
 }	
@@ -59,23 +39,15 @@ pm_modern_financial_instruments = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_telephones_add = 15 #70
-			goods_output_investment_management_add = 50 #100
+			goods_input_telephones_add = 5 #70
+			goods_output_investment_management_add = 15d #100
 		}	
 		level_scaled = {
-			building_employment_clerks_add = 600
-			building_employment_bankers_add = 300
-			building_employment_shopkeepers_add = 100
+			building_employment_bankers_add = 40
+			building_employment_capitalists_add = -40
 		}
 		unscaled = {
-			building_shopkeepers_shares_add = 0.5
-			building_bankers_shares_add = 1
-		}
-	}		
-	state_modifiers = {
-		workforce_scaled = {
-			#state_capitalists_investment_pool_contribution_add = 0.01
-			state_political_strength_from_wealth_mult = 0.01
+			building_bankers_shares_add = 25
 		}	
-	}	
+	}		
 }	

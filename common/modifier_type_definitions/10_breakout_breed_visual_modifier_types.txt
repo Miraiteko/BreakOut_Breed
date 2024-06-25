@@ -1,26 +1,41 @@
 ﻿#凑数显示用buff
 building_base_education_access_add = {
-	good = yes
-	percent = yes
-	ai_value = 1000 # 1 base_education_access = same value as 10 pounds of profit
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=1000
+	}
 }
 building_breed_power_add = {
-	good = yes
-	percent = no
-	num_decimals = 0
-	ai_value = 5 # 1 breed_power = same value as 5 pounds of profit
+	decimals=0
+	color=good
+	percent=no
+	game_data={
+		ai_value=5
+	}
 }
 state_breed_power_add = {
-	good = yes
-	percent = no
-	num_decimals = 0
-	ai_value = 5 # 1 breed_power = same value as 5 pounds of profit
+	decimals=0
+	color=good
+	percent=no
+	game_data={
+		ai_value=5
+	}
 }
 state_min_breeders_ratio_add = {
-	good = no
-	percent = yes
+	decimals=0
+	color=bad
+	percent=yes
+	game_data={
+		ai_value=0
+	}
 }
 state_max_breeders_ratio_add = {
-	good = yes
-	percent = yes
+	decimals=0
+	color=bad
+	percent=yes
+	game_data={
+		ai_value=0
+	}
 }

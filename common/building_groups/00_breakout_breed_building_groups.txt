@@ -1,23 +1,22 @@
 ﻿bg_village_house = {
-
+	parent_group = bg_public_infrastructure
+	
 	always_possible = yes
+	auto_place_buildings = yes
+
+	infrastructure_usage_per_level = 0
 
 	category = rural
 	lens = agriculture
+
+	is_government_funded = no
+	
+	can_use_slaves = yes
+	
+	urbanization = 0
+	
 	economy_of_scale = no
 
-	auto_place_buildings = yes
-	
-	pays_taxes = no
-	
-	cash_reserves_max = 10000
-
-	can_use_slaves = yes
-	urbanization = 0
-	infrastructure_usage_per_level = 0
-
 	default_building = village_house
-	
 	fired_pops_become_radical = no
-	proportionality_limit = 0.8
 }
