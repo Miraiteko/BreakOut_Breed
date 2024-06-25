@@ -1,0 +1,91 @@
+﻿#商品吞吐
+goods_output_investment_management_add = {
+	decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+goods_input_investment_management_add = {
+	decimals=1
+	color=bad
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+goods_output_breed_add = {
+	decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+goods_input_breed_add = {
+	decimals=1
+	color=bad
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+goods_output_elite_breed_add = {
+	decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+goods_input_elite_breed_add = {
+	decimals=1
+	color=bad
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+goods_input_services_add = {
+	decimals=1
+	color=bad
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+#劳动力
+building_employment_breeders_add = {
+	decimals=0
+	color=neutral
+	game_data={
+		ai_value=0
+	}
+}
+building_employment_bankers_add = {
+	decimals=0
+	color=neutral
+	game_data={
+		ai_value=0
+	}
+}
+#抚育者出生率
+building_breeders_fertility_mult = {
+	decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+#死亡率
+building_breeders_mortality_mult = {
+	decimals=1
+	color=bad
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}

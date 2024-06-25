@@ -57,7 +57,6 @@ base_values = {
 	state_urbanization_per_level_add = 100
 	
 	unit_experience_gain_add = 1.0
-	building_group_bg_village_house_tax_mult = -1
 }
 #初始效果
 breakout_breed_initial = {
