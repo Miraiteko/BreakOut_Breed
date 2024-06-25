@@ -33,7 +33,7 @@ state_min_breeders_ratio_add = {
 }
 state_max_breeders_ratio_add = {
 	decimals=0
-	color=bad
+	color=good
 	percent=yes
 	game_data={
 		ai_value=0

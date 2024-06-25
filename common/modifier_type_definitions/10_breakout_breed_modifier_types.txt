@@ -6,6 +6,14 @@ state_village_house_max_level_add = {
 		ai_value=0
 	}
 }
+building_group_bg_village_house_employee_mult = {
+	decimals=1
+	color=bad
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
 #商品吞吐
 goods_output_investment_management_add = {
 	decimals=1

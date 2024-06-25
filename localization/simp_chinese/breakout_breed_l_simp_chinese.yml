@@ -74,6 +74,11 @@ building_group_bg_village_house_tax_mult_desc:"对村居建筑税收的增益或
  pm_privately_owned_building_village_house:"封建家族"
  pm_government_run_building_village_house:"政府运营"
  pm_worker_cooperative_building_village_house:"村民委员会"
+ 
+ pmg_breed_patronage:"生育赞助"
+ pm_serfdom_breed_patronage:"豢养农奴"
+ pm_tradition_breed_patronage:"多子多福"
+ pm_elite_breed_patronage:"精英教育"
 
  breed_center:"社区"
  pmg_breed_center_methods:"城镇家庭"

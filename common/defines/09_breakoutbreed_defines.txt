@@ -81,18 +81,16 @@ NPops = {
 	JOB_SATISFACTION_FROM_EMPLOYMENT = 100					# Job satisfaction gained from having a job
 } 
 NPolitics = {
-	#人口行政力开支翻倍
+	#人口行政力开支提高
 	STATE_BUREAUCRACY_POP_MULTIPLE = 80000	# from 100000
 }
 
 NEconomy = {
 	#建造力投入调整
-	MAX_WEEKLY_CONSTRUCTION_PROGRESS = 30				# Max construction progress per week on a single project
-	MAX_WEEKLY_CONSTRUCTION_ALLOCATION = 30				# Max construction points allocated to a project per week
 	MIN_CONSTRUCTION_EFFICIENCY = 0.1					# Construction efficiency cannot go below this amount
 
 	#建筑收入界定
-	BUILDING_MIN_EARNINGS_TO_HIRE_EMPLOYEES = 0.1  # Non-subsidized buildings will not hire if it would result in their annual earnings/employee falling below this threshold
+	BUILDING_DEFAULT_MIN_EARNINGS_TO_HIRE_EMPLOYEES = 0.1  # Non-subsidized buildings will not hire if it would result in their annual earnings/employee falling below this threshold
 	EARNINGS_RATIO_HIGH_THRESHOLD = 2.0			# Buildings whose productivity exceeds this factor of the average will be considered high-productivity buildings
 	EARNINGS_RATIO_LOW_THRESHOLD = 0.5			# Buildings whose productivity is below this factor of the average will be considered low-productivity buildings
 	EARNINGS_ABSOLUTE_HIGH_THRESHOLD = 50		# Buildings whose productivity exceeds this amount will ALWAYS be considered high-productivity buildings

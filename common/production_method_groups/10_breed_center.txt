@@ -20,3 +20,11 @@ pmg_breed_center_space_use = {
 		pm_breed_center_parkinglot
 	}
 }
+pmg_breed_patronage = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_serfdom_breed_patronage
+		pm_tradition_breed_patronage
+		pm_elite_breed_patronage
+	}
+}

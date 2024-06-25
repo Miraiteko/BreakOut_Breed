@@ -170,3 +170,61 @@ pm_breed_center_parkinglot = {
 		}	
 	}		
 }
+#地主赞助
+pm_serfdom_breed_patronage = {
+	texture = "gfx/interface/icons/production_method_icons/serfdom.dds"
+	disallowing_laws = {
+		law_tenant_farmers
+		law_commercialized_agriculture
+		law_homesteading
+		law_collectivized_agriculture
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_breed_add = 1.5 #40
+		}	
+	}		
+	state_modifiers = {
+		unscaled = {
+			state_max_breeders_ratio_add = 0.05
+		}
+	}
+}
+pm_tradition_breed_patronage = {
+	texture = "gfx/interface/icons/production_method_icons/scholastic_education.dds"
+	disallowing_laws = {
+		law_serfdom
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_breed_add = 1 #40
+		}	
+	}	
+	state_modifiers = {
+		unscaled = {
+			state_min_breeders_ratio_add = -0.05
+		}
+	}		
+}	
+
+pm_elite_breed_patronage = {
+	texture = "gfx/interface/icons/production_method_icons/philosophy_dept.dds"
+	disallowing_laws = {
+		law_no_womens_rights
+		law_serfdom
+		law_no_schools
+		law_child_labor_allowed
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_breed_add = 0.5 #40
+			goods_input_elite_breed_add = 0.2 #100
+		}
+	}		
+	state_modifiers = {
+		unscaled = {
+			state_max_breeders_ratio_add = -0.05
+			state_min_breeders_ratio_add = -0.10
+		}
+	}	
+}
