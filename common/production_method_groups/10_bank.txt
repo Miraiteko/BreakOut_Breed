@@ -6,3 +6,12 @@
 		pm_modern_financial_instruments
 	}
 }
+pmg_bank_service = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_no_bank_service
+		pm_base_bank_service
+		pm_mutual_funds_service
+		pm_modern_financial_instruments_service
+	}
+}

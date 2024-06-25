@@ -1,4 +1,28 @@
-﻿breed_center = {
+﻿bank = {
+	building_group = bg_urban_facilities	
+	texture = "gfx/interface/icons/building_icons/bank.dds"
+	
+	unlocking_technologies = {
+		banking
+	}
+
+	production_method_groups = {
+		pmg_bank
+	}
+
+	required_construction = construction_cost_high
+	
+	ai_value = 2000
+	
+	should_auto_expand = { 
+		OR = {
+			cash_reserves_ratio > 0.5
+			is_subsidized = yes
+		}
+		occupancy > 0.85
+	}
+}
+breed_center = {
 	building_group = bg_private_infrastructure	
 	texture = "gfx/interface/icons/building_icons/breed_center.dds"
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
@@ -58,7 +82,7 @@ building_manor_house = {
 
 	investment_scores = {
 		bg_village_house_score = {
-			group = "bg_manufacturing"
+			group = "bg_village_house"
 			score = {
 				value = 10.0
 			}
@@ -185,10 +209,16 @@ building_financial_district = {
 
 	production_method_groups = {
 		pmg_ownership_building_financial_district
-		pmg_bank
+		pmg_bank_service
 	}
 	
 	investment_scores = {
+		bg_urban_facilities_score = {
+			group = "bg_urban_facilities"
+			score = {
+				value = 10.0
+			}
+		}		
 		bg_manufacturing_score = {
 			group = "bg_manufacturing"
 			score = {
