@@ -7,7 +7,7 @@ pm_serfdom_breed = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_grain_add = 1 #20
+			goods_input_grain_add = 0.5 #20
 			goods_output_breed_add = 6 #25
 		}	
 		level_scaled = {
@@ -34,7 +34,7 @@ pm_tradition_breed = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_grain_add = 3 #20
+			goods_input_grain_add = 1.5 #20
 			goods_output_breed_add = 6 #25
 			goods_output_elite_breed_add = 2 #100
 		}	
@@ -59,7 +59,7 @@ pm_tradition_breed_breed_center = {
 	texture = "gfx/interface/icons/production_method_icons/scholastic_education.dds"
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_groceries_add = 2 #30
+			goods_input_groceries_add = 1 #30
 			goods_output_breed_add = 5 #25
 			goods_output_elite_breed_add = 3 #100
 		}	
@@ -88,8 +88,7 @@ pm_elite_breed = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_groceries_add = 2 #30
-			goods_input_paper_add = 1 #30
+			goods_input_groceries_add = 1 #30
 			goods_input_services_add = 1 #30
 			goods_output_breed_add = 4 #25
 			goods_output_elite_breed_add = 6 #100

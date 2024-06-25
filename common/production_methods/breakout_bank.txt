@@ -48,6 +48,11 @@ pm_modern_financial_instruments = {
 
 pm_no_bank_service = {
 	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_investment_management_add = 0.2 #100
+		}	
+	}
 }
 pm_base_bank_service = {
 	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
@@ -56,12 +61,12 @@ pm_base_bank_service = {
 	}	
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_investment_management_add = 1 #100
+			goods_input_investment_management_add = 0.5 #100
 		}	
 		level_scaled = {
 			building_employment_bankers_add = 2
 			building_employment_capitalists_add = -10
-			building_employment_clerks_add = -20
+			building_employment_clerks_add = -30
 		}
 		unscaled = {
 			building_bankers_shares_add = 10
@@ -76,12 +81,12 @@ pm_mutual_funds_service = {
 	}	
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_investment_management_add = 2.5 #100
+			goods_input_investment_management_add = 1.2 #100
 		}	
 		level_scaled = {
 			building_employment_bankers_add = 5
 			building_employment_capitalists_add = -25
-			building_employment_clerks_add = -50
+			building_employment_clerks_add = -75
 		}
 		unscaled = {
 			building_bankers_shares_add = 15
@@ -96,12 +101,12 @@ pm_modern_financial_instruments_service = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_investment_management_add = 5 #100
+			goods_input_investment_management_add = 2 #100
 		}	
 		level_scaled = {
 			building_employment_bankers_add = 10
 			building_employment_capitalists_add = -50
-			building_employment_clerks_add = -100
+			building_employment_clerks_add = -150
 		}
 		unscaled = {
 			building_bankers_shares_add = 25
