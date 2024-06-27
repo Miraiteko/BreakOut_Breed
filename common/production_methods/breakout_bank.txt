@@ -8,7 +8,7 @@
 		}	
 		level_scaled = {
 			building_employment_shopkeepers_add = 100
-			building_employment_clerks_add = 50
+			building_employment_bankers_add = 50
 		}
 	}	
 }	
@@ -25,7 +25,7 @@ pm_mutual_funds = {
 		}	
 		level_scaled = {
 			building_employment_shopkeepers_add = 50
-			building_employment_clerks_add = 100
+			building_employment_bankers_add = 100
 		}
 	}	
 }	
@@ -41,7 +41,7 @@ pm_modern_financial_instruments = {
 			goods_output_investment_management_add = 15 #100
 		}	
 		level_scaled = {
-			building_employment_clerks_add = 150
+			building_employment_bankers_add = 150
 		}
 	}		
 }	
