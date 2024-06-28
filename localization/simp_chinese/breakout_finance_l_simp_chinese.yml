@@ -24,6 +24,7 @@
  bankers_only_icon:"@capitalists!"
  bankers_no_icon:"银行家"
  bankers_desc:"银行家是[GetPopType('capitalists').GetName]的一种变体，特指从事金融投资工作的资本家，是资本在世间的代理人。\n\n每天都有大量的财富从他们手中流过，不仅包括他们自己的金钱，还包括投资者委托给他们的资产——在$BREAKOUT_BREED$之中，这个过程被表现为：银行家们有着极高的[concept_investment_pool]贡献。"
+ BANKERS_QUALIFICATIONS_DESC:"只有拥有足够[concept_literacy]和大量[concept_wealth]的人群能成为#v $bankers$#!。[concept_wealth]和[concept_literacy]越高，转变潜力就越高。[concept_culture]被[concept_discrimination]的人群转变需要更长时间。#v $capitalists$#!特别容易成为#v $bankers$#!"
  state_bankers_investment_pool_contribution_add:"$bankers$[concept_investment_pool]贡献"
  state_bankers_investment_pool_efficiency_mult:"$bankers$[concept_investment_pool]贡献效率"
  state_bankers_investment_pool_contribution_add_desc:"$bankers$会将多少收益用于投资"
