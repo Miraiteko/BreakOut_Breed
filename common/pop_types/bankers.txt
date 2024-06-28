@@ -3,7 +3,7 @@
 	color = hsv{ 0.52 0.42 0.49 }
 	strata = rich
 	start_quality_of_life = 25
-	wage_weight = 20
+	wage_weight = 30
 	paid_private_wage = yes
 	literacy_target = 0.70
 	dependent_wage = 0.0	# per year
@@ -56,17 +56,17 @@
 				wealth > 25
 				literacy > 0.5
 			}
-			# baseline: ( wealth - 25 ) / 10 + ( literacy - 0.5 ) * 3 
+			# baseline: ( wealth - 35 ) / 25 + ( literacy - 0.5 ) * 2 
 			add = {
 				value = wealth
-				subtract = 25
-				divide = 10
+				subtract = 35
+				divide = 25
 				desc = "QUALIFICATIONS_WEALTH_FACTOR"
 			}
 			add = {
 				value = literacy_rate
 				subtract = 0.5
-				multiply = 3
+				multiply = 2
 				desc = "QUALIFICATIONS_LITERACY_FACTOR"
 			}
 			if = {
