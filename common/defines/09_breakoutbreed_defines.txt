@@ -96,3 +96,18 @@ NEconomy = {
 	EARNINGS_ABSOLUTE_HIGH_THRESHOLD = 50		# Buildings whose productivity exceeds this amount will ALWAYS be considered high-productivity buildings
 	EARNINGS_ABSOLUTE_LOW_THRESHOLD = 0.1			# Buildings whose productivity is below this amount will ALWAYS be considered low-productivity buildings
 }
+
+NAI = {
+	RAISE_TAX_TO_DESIRED_INCOME_THRESHOLD = 1.25
+	RAISE_TAX_ABOVE_DESIRED_INCOME_NO_DEBT_THRESHOLD = 0.9
+	RAISE_TAX_ABOVE_DESIRED_INCOME_WITH_DEBT_THRESHOLD = 1.5
+	LOWER_TAX_TO_DESIRED_INCOME_THRESHOLD = 2.0
+	LOWER_TAX_BELOW_DESIRED_INCOME_THRESHOLD = 2.5
+	RAISE_TAX_HIGH_DEBT_OVERRIDE_RATIO = 0.1 # At this amount of debt, any level of tax is OK to deal with it
+
+	CONSTRUCTION_RESERVES_NEW_CONSTRUCTIONS = 0.5 # If gold reserves are less than this after adding the cost of a new construction, don't queue it
+	CONSTRUCTION_DEBT_RESUME = 0.05 # If constructions are paused, resume once debt is this low relative to ceiling
+	CONSTRUCTION_DEBT_PAUSE = 0.2 # If in this much relative debt to debt ceiling, pause all non-critical constructions
+	CONSTRUCTION_DEBT_RESUME_CRITICAL_CONSTRUCTION = 0.1 # If critical constructions are paused, resume once debt is this low relative to ceiling
+	CONSTRUCTION_DEBT_PAUSE_CRITICAL_CONSTRUCTION = 0.3 # If in this much relative debt to debt ceiling, pause all critical constructions
+}

@@ -66,6 +66,25 @@ base_values = {
 	# It just needs to be above 0 to ensure the mechanic is activated at all
 	country_leverage_resistance_per_population_add = 1 
 }
+in_default = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	building_throughput_add = -0.5
+	unit_offense_mult = -1.5
+	unit_defense_mult = -1.5
+	country_government_wages_mult = -1.5
+	country_legitimacy_base_add = -20
+}
+declared_bankruptcy = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_prestige_mult = -1.5
+	unit_offense_mult = -1.5
+	unit_defense_mult = -1.5
+	country_government_wages_mult = -1.5
+	country_legitimacy_base_add = -50
+	state_radicals_from_sol_change_mult = 1.0
+}
+
+
 #初始效果
 breakout_breed_initial = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds

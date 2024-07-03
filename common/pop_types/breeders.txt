@@ -33,7 +33,7 @@
 		}
 		else = {
 			add = {
-				value = 5
+				value = 10
 				desc = "QUALIFICATIONS_BASE"
 			}
 		}
