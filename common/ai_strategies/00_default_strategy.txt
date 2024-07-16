@@ -3162,8 +3162,24 @@ ai_strategy_default = {
 		if = {
 			limit = { has_strategy = ai_strategy_maintain_mandate_of_heaven }
 			multiply = 0.1		
-		}			
+		}	
 
+		if = {
+			limit = { scaled_gold_reserves > 0.2 }
+			multiply = 1.5
+		}
+		if = {
+			limit = { scaled_gold_reserves > 0.5 }
+			multiply = 1.5
+		}	
+		if = {
+			limit = { scaled_gold_reserves > 0.8 }
+			multiply = 1.5
+		}
+		if = {
+			limit = { scaled_gold_reserves > 1.2 }
+			multiply = 1.5
+		}
 		if = {
 			limit = { scaled_debt > 0.2 }
 			multiply = 0.5

@@ -7,5 +7,49 @@ GLOBAL = {
 			is_decaying = yes
 		}
 		save_scope_as = checked_state
+
+		#给予初始社区
+		if = {
+			limit = {
+				owner ?= {
+					has_technology_researched = urbanization #城镇化
+				}
+				market ?= {
+					mg:groceries ?= {
+						market_goods_sell_orders > 0
+					}
+				}
+			}
+			if = {
+				limit = {
+					total_urbanization > 1000
+				}
+				create_building = {
+					building="breed_center"
+					level = 3
+					reserves = 1
+				}
+			}
+			else_if = {
+				limit = {
+					total_urbanization > 800
+				}
+				create_building = {
+					building="breed_center"
+					level = 2
+					reserves = 1
+				}
+			}
+			else_if = {
+				limit = {
+					total_urbanization > 500
+				}
+				create_building={
+					building="breed_center"
+					level = 1
+					reserves = 1
+				}
+			}
+		}
 	}
 }

@@ -16,6 +16,8 @@ law_no_womens_rights = {
 		country_breeders_pol_str_mult = -1.0
 		state_min_breeders_ratio_add = 0.45
 		state_max_breeders_ratio_add = 0.55
+		state_breeders_mass_migration_disallowed_bool = yes
+		state_breeders_internal_migration_disallowed_bool = yes
 	}
 	
 	possible_political_movements = {
@@ -53,11 +55,15 @@ law_women_own_property = {
 	on_enact = {
 		recalculate_pop_ig_support = yes
 	}
+	disallowing_laws = {
+		law_serfdom
+	}
 
 	modifier = {
 		country_breeders_pol_str_mult = -0.95
 		state_min_breeders_ratio_add = 0.40
 		state_max_breeders_ratio_add = 0.55
+		state_breeders_mass_migration_disallowed_bool = yes
 	}
 	
 	possible_political_movements = {
@@ -139,6 +145,10 @@ law_women_in_the_workplace = {
 	unlocking_technologies = {
 		feminism
 	}
+	disallowing_laws = {
+		law_serfdom
+		law_tenant_farmers
+	}
 	
 	on_enact = {
 		recalculate_pop_ig_support = yes
@@ -201,9 +211,9 @@ law_women_in_the_workplace = {
 						OR = {
 							has_law = law_type:law_no_womens_rights
 							has_law = law_type:law_women_own_property
-		}
+						}
 						has_technology_researched = feminism
-	}
+					}
 					is_pop_type = breeders
 				}
 				value = 1.0
@@ -288,7 +298,10 @@ law_womens_suffrage = {
 	unlocking_technologies = {
 		feminism
 	}
-
+	disallowing_laws = {
+		law_serfdom
+		law_tenant_farmers
+	}
 	unlocking_laws = {
 		law_census_voting
 		law_landed_voting

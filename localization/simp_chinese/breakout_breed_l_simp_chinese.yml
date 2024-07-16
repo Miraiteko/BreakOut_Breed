@@ -45,6 +45,11 @@ state_max_breeders_ratio_add_desc:"当地区中的$breeders$人口占比超过�
 state_min_breeders_ratio_add:"最小[GetPopType('breeders').GetName]比例"
 state_min_breeders_ratio_add_desc:"当地区中的$breeders$人口占比低于这个比例的时候，$breeders$不能获得其他职业的资质。\n变更[GetLawGroup('lawgroup_rights_of_women').GetName]可以改变最小$breeders$比例。"
 
+state_breeders_internal_migration_disallowed_bool:"禁止[GetPopType('breeders').GetName][Concept('concept_migration','$concept_migration_internal$')]"
+ state_breeders_internal_migration_disallowed_bool_desc:"禁止[GetPopType('breeders').GetName]在他们的[concept_country]内部[Concept('concept_state','$concept_states$')]间[concept_migration]"
+ state_breeders_mass_migration_disallowed_bool:"禁止[GetPopType('breeders').GetName][concept_mass_migration]"
+ state_breeders_mass_migration_disallowed_bool_desc:"禁止[GetPopType('breeders').GetName][Concept('concept_mass_migration','$concept_mass_migration_migrating$')]出他们的[concept_country]"
+ 
  #抚育商品相关
  breed:"抚育"
  goods_output_breed_add:"每级@breed!$breed$产出"
@@ -70,6 +75,11 @@ building_group_bg_village_house_tax_mult_desc:"对村居建筑税收的增益或
  pmg_village_house_methods:"村居"
  pm_serfdom_breed:"妇女剥削"
  pm_tradition_breed:"多子多福"
+ pmg_home_workshops_village_house:"帮助农事"
+ pm_home_workshops_no_building_village_house:"专注生育"
+ pm_home_workshops_wood_village_house:"柴火"
+ pm_home_workshops_fruit_village_house:"野果"
+ pm_home_workshops_fabric_village_house:"麻布"
  pmg_village_house_ownership:"所有制"
  pm_privately_owned_building_village_house:"封建家族"
  pm_government_run_building_village_house:"政府运营"

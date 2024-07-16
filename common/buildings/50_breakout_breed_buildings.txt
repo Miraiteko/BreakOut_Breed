@@ -51,6 +51,16 @@ breed_center = {
 		}
 		occupancy > 0.85
 	}
+	possible = {
+		OR = {
+			owner = { is_ai = no }
+			market ?= {
+				mg:groceries ?= {
+					market_goods_sell_orders > 0
+				}
+			}
+		}
+	}
 }
 
 village_house = {
@@ -67,5 +77,6 @@ village_house = {
 
 	production_method_groups = {
 		pmg_village_house_methods
+		pmg_home_workshops_village_house
 	}
 }

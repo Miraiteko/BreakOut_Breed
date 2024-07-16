@@ -1,7 +1,7 @@
 ﻿clerks = {
 	texture = "gfx/interface/icons/pops_icons/clerks.dds"
 	strata = poor
-	start_quality_of_life = 7
+	start_quality_of_life = 12
 	color = hsv{ 0.28 0.40 0.75 }
 	wage_weight = 1.5
 	paid_private_wage = yes

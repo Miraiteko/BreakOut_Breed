@@ -2,7 +2,7 @@
 	texture = "gfx/interface/icons/pops_icons/bureaucrats.dds"
 	color = hsv{ 0.25 0.4 0.5 }
 	strata = middle
-	start_quality_of_life = 10
+	start_quality_of_life = 15
 	wage_weight = 4
 	paid_private_wage = yes
 	literacy_target = 0.40

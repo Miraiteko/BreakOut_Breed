@@ -2,7 +2,7 @@
 	texture = "gfx/interface/icons/pops_icons/machinists.dds"
 	color = hsv{ 0.92 0.40 0.78 }
 	strata = poor
-	start_quality_of_life = 7
+	start_quality_of_life = 12
 	wage_weight = 1.5
 	paid_private_wage = yes
 	literacy_target = 0.10

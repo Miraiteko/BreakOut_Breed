@@ -104,6 +104,20 @@ country_breeders_pol_str_mult={
 		ai_value=0
 	}
 }
+state_breeders_mass_migration_disallowed_bool = {
+	color=bad
+	boolean=yes
+	game_data={
+		ai_value=0
+	}
+}
+state_breeders_internal_migration_disallowed_bool = {
+	color=bad
+	boolean=yes
+	game_data={
+		ai_value=0
+	}
+}
 #银行家
 building_employment_bankers_add = {
 	decimals=0

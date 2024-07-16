@@ -2,7 +2,7 @@
 	texture = "gfx/interface/icons/pops_icons/shopkeepers.dds"
 	color = hsv{ 0.41 0.45 0.88 }
 	strata = middle
-	start_quality_of_life = 10
+	start_quality_of_life = 15
 	wage_weight = 2
 	paid_private_wage = yes
 	literacy_target = 0.20

@@ -8,7 +8,7 @@ pm_serfdom_breed = {
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_grain_add = 0.5 #20
-			goods_output_breed_add = 6 #25
+			goods_output_breed_add = 6 #40
 		}	
 		level_scaled = {
 			building_employment_breeders_add = 9000
@@ -19,7 +19,7 @@ pm_serfdom_breed = {
 	}		
 	state_modifiers = {
 		workforce_scaled = {
-			state_breed_power_add = 35
+			state_breed_power_add = 32
 		}	
 		unscaled = {
 			
@@ -29,13 +29,12 @@ pm_serfdom_breed = {
 pm_tradition_breed = {
 	texture = "gfx/interface/icons/production_method_icons/scholastic_education.dds"
 	disallowing_laws = {
-		law_serfdom
 		law_no_womens_rights
 	}
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_grain_add = 1.5 #20
-			goods_output_breed_add = 6 #25
+			goods_output_breed_add = 6 #40
 			goods_output_elite_breed_add = 2 #100
 		}	
 		level_scaled = {
@@ -47,20 +46,54 @@ pm_tradition_breed = {
 	}		
 	state_modifiers = {
 		workforce_scaled = {
-			state_breed_power_add = 35
+			state_breed_power_add = 32
 		}	
 		unscaled = {
 			
 		}
 	}	
 }	
-
+pm_home_workshops_no_building_village_house = {
+	texture = "gfx/interface/icons/production_method_icons/no_home_workshops.dds"	
+	state_modifiers = {
+		workforce_scaled = {
+			state_breed_power_add = 3
+		}	
+	}
+}	
+pm_home_workshops_wood_village_house = {
+	texture = "gfx/interface/icons/production_method_icons/hardwood_selection.dds"
+	building_modifiers = {
+		unscaled = {
+			goods_output_breed_add = -1
+			goods_output_wood_add = 0.3 #20
+		}
+	}				
+}	
+pm_home_workshops_fruit_village_house = {
+	texture = "gfx/interface/icons/production_method_icons/orchards.dds"
+	building_modifiers = {
+		unscaled = {
+			goods_output_breed_add = -1
+			goods_output_fruit_add = 0.25 #30
+		}
+	}				
+}	
+pm_home_workshops_fabric_village_house = {
+	texture = "gfx/interface/icons/production_method_icons/craftsman_sewing.dds"
+	building_modifiers = {
+		unscaled = {
+			goods_output_breed_add = -1
+			goods_output_fabric_add = 0.4 #20
+		}
+	}				
+}	
 pm_tradition_breed_breed_center = {
 	texture = "gfx/interface/icons/production_method_icons/scholastic_education.dds"
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_groceries_add = 1 #30
-			goods_output_breed_add = 5 #25
+			goods_output_breed_add = 5 #40
 			goods_output_elite_breed_add = 3 #100
 		}	
 		level_scaled = {
@@ -82,7 +115,6 @@ pm_elite_breed = {
 	texture = "gfx/interface/icons/production_method_icons/philosophy_dept.dds"
 	disallowing_laws = {
 		law_no_womens_rights
-		law_serfdom
 		law_no_schools
 		law_child_labor_allowed
 	}
@@ -90,7 +122,7 @@ pm_elite_breed = {
 		workforce_scaled = {
 			goods_input_groceries_add = 1 #30
 			goods_input_services_add = 1 #30
-			goods_output_breed_add = 4 #25
+			goods_output_breed_add = 4 #40
 			goods_output_elite_breed_add = 6 #100
 		}	
 		level_scaled = {
@@ -196,7 +228,7 @@ pm_tradition_breed_patronage = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_breed_add = 1 #40
+			goods_input_breed_add = 1.2 #40
 		}	
 	}	
 	state_modifiers = {
@@ -217,7 +249,7 @@ pm_elite_breed_patronage = {
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_breed_add = 0.5 #40
-			goods_input_elite_breed_add = 0.2 #100
+			goods_input_elite_breed_add = 0.5 #100
 		}
 	}		
 	state_modifiers = {
