@@ -119,7 +119,7 @@ building_breed_power_add_desc:"该建筑为所在地区提供的[concept_breed_p
 state_breed_power_add:"@breed!地区抚育能力"
 state_breed_power_add_desc:"该建筑为所在地区提供的[concept_breed_power]"
  concept_breed_power_ratio:"@breed!抚育效率"
- concept_breed_power_ratio_desc:"抚育效率是该地区[concept_breed_power]与总人口数量（每千人）的比值。\n\n抚育效率超过#v 1#!时，则[Concept('concept_pop_growth', '$concept_pop_growth_birthrate$')]提高；同时，由于人群中的儿童比例上升，[Concept('concept_workforce', '$modifier_state_working_adult_ratio_add$')]比例将有所下降。\n抚育效率不足#v 1#!时，则[Concept('concept_pop_growth', '$concept_pop_growth_birthrate$')]下降；同时，由于人群中的儿童比例下降，[Concept('concept_workforce', '$modifier_state_working_adult_ratio_add$')]比例将有所提升。"
+ concept_breed_power_ratio_desc:"抚育效率是该地区[concept_breed_power]与总人口数量（每千人）的比值。\n\n抚育效率超过#v 1#!时，则[Concept('concept_pop_growth', '$concept_pop_growth_birthrate$')]提高；同时，由于人群中的儿童比例上升，[Concept('concept_workforce', '$state_working_adult_ratio_add$')]比例将有所下降。\n抚育效率不足#v 1#!时，则[Concept('concept_pop_growth', '$concept_pop_growth_birthrate$')]下降；同时，由于人群中的儿童比例下降，[Concept('concept_workforce', '$state_working_adult_ratio_add$')]比例将有所提升。"
  
  breed_ratio_modifier:"[concept_breed_power_ratio]"
  breed_ratio_bonus_modifier:"[concept_breed_power_ratio]#p 较高#!"

@@ -20,6 +20,7 @@ pm_serfdom_breed = {
 	state_modifiers = {
 		workforce_scaled = {
 			state_breed_power_add = 32
+			state_village_house_max_level_add = 0.5
 		}	
 		unscaled = {
 			
@@ -47,6 +48,7 @@ pm_tradition_breed = {
 	state_modifiers = {
 		workforce_scaled = {
 			state_breed_power_add = 32
+			state_village_house_max_level_add = 0.5
 		}	
 		unscaled = {
 			

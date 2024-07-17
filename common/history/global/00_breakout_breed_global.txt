@@ -51,5 +51,46 @@ GLOBAL = {
 				}
 			}
 		}
+
+		#村居初始生产方式
+		if = { #优先生育本职
+			limit = {
+				sg:breed = { 
+					state_goods_pricier > 0.1 
+				}
+			}
+			activate_production_method = {
+				building_type = village_house
+				production_method = pm_home_workshops_no_building_village_house
+			}	
+		}
+		else_if = { #很缺木柴
+			limit = {
+				sg:wood = { 
+					state_goods_pricier > 0.5 
+				}
+			}
+			activate_production_method = {
+				building_type = village_house
+				production_method = pm_home_workshops_wood_village_house
+			}	
+		}
+		else_if = { #很缺吃的
+			limit = {
+				sg:grain = { 
+					state_goods_pricier > 0.5 
+				}
+			}
+			activate_production_method = {
+				building_type = village_house
+				production_method = pm_home_workshops_fruit_village_house
+			}	
+		}
+		else =  { #默认织布
+			activate_production_method = {
+				building_type = village_house
+				production_method = pm_home_workshops_fabric_village_house
+			}	
+		}
 	}
 }
