@@ -120,6 +120,15 @@ state_village_house_max_level_add_desc:"对$village_house$建筑最大等级的�
  breakout_extra_peasants:"[Concept('concept_occupancy', '自给人口密度')]"
  building_employment_peasants_mult:"$peasants$就业数量"
  building_employment_peasants_mult_desc:"修正建筑每等级可以雇佣的自给农数量"
+
+ building_group_bg_subsistence_agriculture_employee_mult:"$bg_subsistence_agriculture$就业者"
+ building_group_bg_subsistence_agriculture_employee_mult_desc:"对$bg_subsistence_agriculture$就业者数量的增益或惩罚"
+
+
+ building_group_bg_village_house_breeders_mortality_mult:"村居的$breeders$[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')]"
+ building_group_bg_village_house_breeders_mortality_mult_desc:"对$building_group_bg_village_house_breeders_mortality_mult$的增益或惩罚"
+ building_group_bg_village_house_slaves_mortality_mult:"村居的$slaves$[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')]"
+ building_group_bg_village_house_slaves_mortality_mult_desc:"对$building_group_bg_village_house_slaves_mortality_mult$的增益或惩罚"
  #出生率修正相关
  concept_breed_power:"@breed!抚育能力"
  concept_breed_power_desc:"抚育能力表示了该地区能够培养的下一代劳动者的规模。[SelectLocalization(GetPlayer.IsValid,'concept_village_house_desc_added','村居')]和[SelectLocalization(GetPlayer.IsValid,'concept_breed_center_desc_added','社区')]可以提供地区抚育能力。\n为了维持标准的[concept_breed_power_ratio],每一千人需要消耗1点抚育能力。当抚育能力超额或是不足时，地区的[Concept('concept_pop_growth', '$concept_pop_growth_birthrate$')]就会受到影响。"

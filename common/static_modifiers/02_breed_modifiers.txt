@@ -64,10 +64,6 @@ base_values = {
 	state_urbanization_per_level_add = 100
 	
 	unit_experience_gain_add = 1.0
-	
-	# Changing this value currently does nothing as the logic is contained in a static modifier below 
-	# It just needs to be above 0 to ensure the mechanic is activated at all
-	country_leverage_resistance_per_population_add = 1 
 }
 in_default = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
@@ -106,10 +102,10 @@ breed_ratio_penalty_modifier = {
 	state_birth_rate_mult = -0.5
 	state_working_adult_ratio_add = 0.1	
 }
+
 #额外的抚育者
 breakout_extra_breeders = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	#building_throughput_add = 1.25
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
 	building_employment_breeders_mult = 2.0
 	building_breeders_mortality_mult = 0.1
 	building_slaves_mortality_mult = 0.15
@@ -117,10 +113,9 @@ breakout_extra_breeders = {
 
 #额外的自给农民
 breakout_extra_peasants = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	#building_throughput_add = 1.5
-	building_employment_peasants_mult = 1.5
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
 	building_subsistence_output_add = -1
+	building_employment_peasants_mult = 1.5
 }
 #受教育机会
 base_education_access_modifier = {

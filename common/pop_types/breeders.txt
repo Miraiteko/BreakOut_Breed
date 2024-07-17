@@ -1,6 +1,6 @@
 ﻿breeders = {
 	texture = "gfx/interface/icons/pops_icons/breeders.dds"
-	color = { 220 75 210 }
+	color = { 200 125 180 }
 	strata = poor
 	#can_always_hire = yes
 	ignores_employment_proportionality = yes

@@ -11,7 +11,7 @@ pm_serfdom_breed = {
 			goods_output_breed_add = 6 #40
 		}	
 		level_scaled = {
-			building_employment_breeders_add = 9000
+			building_employment_breeders_add = 10000
 		}
 		unscaled = {
 			building_breeders_mortality_mult = 0.2
@@ -38,7 +38,7 @@ pm_tradition_breed = {
 			goods_output_elite_breed_add = 2 #100
 		}	
 		level_scaled = {
-			building_employment_breeders_add = 9000
+			building_employment_breeders_add = 10000
 		}
 		unscaled = {
 			building_breeders_mortality_mult = 0.1
@@ -97,7 +97,7 @@ pm_tradition_breed_breed_center = {
 			goods_output_elite_breed_add = 3 #100
 		}	
 		level_scaled = {
-			building_employment_breeders_add = 9000
+			building_employment_breeders_add = 10000
 		}
 		unscaled = {
 			#building_production_exp_cap_add = 0.2
@@ -126,8 +126,8 @@ pm_elite_breed = {
 			goods_output_elite_breed_add = 6 #100
 		}	
 		level_scaled = {
-			building_employment_academics_add = 200
-			building_employment_clerks_add = 800
+			building_employment_academics_add = 500
+			building_employment_clerks_add = 1500
 			building_employment_breeders_add = 8000
 		}
 		unscaled = {

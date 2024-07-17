@@ -6,7 +6,7 @@ state_village_house_max_level_add = {
 		ai_value=0
 	}
 }
-building_group_bg_village_house_employee_mult = {
+building_group_bg_village_house_employee_mult={
 	decimals=1
 	color=bad
 	percent=yes
@@ -17,6 +17,22 @@ building_group_bg_village_house_employee_mult = {
 building_group_bg_village_house_throughput_add = {
 	decimals=1
 	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_group_bg_village_house_breeders_mortality_mult = {
+	decimals=1
+	color=bad
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_group_bg_village_house_slaves_mortality_mult = {
+	decimals=1
+	color=bad
 	percent=yes
 	game_data={
 		ai_value=0
@@ -168,6 +184,14 @@ state_bankers_investment_pool_contribution_add={
 building_employment_peasants_mult = {
 	decimals=0
 	color=neutral
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_group_bg_subsistence_agriculture_employee_mult={
+	decimals=1
+	color=bad
 	percent=yes
 	game_data={
 		ai_value=0

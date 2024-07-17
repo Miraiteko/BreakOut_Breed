@@ -19,9 +19,3 @@ base_education_access_ratio = {
         add = 1
     }
 }
-breakout_extra_breeders_size = {
-    value =  scope:checked_state.var:state_breed_power
-    #value = scope:checked_state.b:village_house.level
-    #multiply = scope:checked_state.b:village_house.occupancy
-    #subtract = 2
-}

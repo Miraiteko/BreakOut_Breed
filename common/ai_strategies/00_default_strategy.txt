@@ -3604,7 +3604,7 @@ ai_strategy_default = {
 		building_power_plant = should_have
 		building_railway = should_have
 		building_trade_center = wants_to_have
-		building_breed_center = wants_to_have
+		breed_center = wants_to_have
 	}
 	
 	# Specifying values here will override subsidy priorities while at war
