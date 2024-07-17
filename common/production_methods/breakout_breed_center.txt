@@ -14,16 +14,15 @@ pm_serfdom_breed = {
 			building_employment_breeders_add = 9000
 		}
 		unscaled = {
-			building_breeders_mortality_mult = 0.3
+			building_breeders_mortality_mult = 0.2
+			building_slaves_mortality_mult = 0.3
 		}
 	}		
 	state_modifiers = {
 		workforce_scaled = {
 			state_breed_power_add = 32
-			state_village_house_max_level_add = 0.5
 		}	
 		unscaled = {
-			
 		}
 	}
 }
@@ -42,16 +41,15 @@ pm_tradition_breed = {
 			building_employment_breeders_add = 9000
 		}
 		unscaled = {
-			building_breeders_mortality_mult = 0.15
+			building_breeders_mortality_mult = 0.1
+			building_slaves_mortality_mult = 0.15
 		}
 	}		
 	state_modifiers = {
 		workforce_scaled = {
 			state_breed_power_add = 32
-			state_village_house_max_level_add = 0.5
 		}	
 		unscaled = {
-			
 		}
 	}	
 }	
@@ -103,7 +101,7 @@ pm_tradition_breed_breed_center = {
 		}
 		unscaled = {
 			#building_production_exp_cap_add = 0.2
-			building_breeders_mortality_mult = 0.10
+			building_breeders_mortality_mult = 0.1
 		}
 	}		
 	state_modifiers = {

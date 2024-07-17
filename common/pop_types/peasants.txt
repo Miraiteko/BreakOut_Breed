@@ -35,7 +35,7 @@
 		else = {
 		#识字率越高，越不想成为自给农
 			add = {
-				add = 50
+				value = 500
 				multiply = {
 					value = 1
 					subtract = literacy_rate

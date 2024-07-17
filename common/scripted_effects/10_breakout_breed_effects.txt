@@ -57,7 +57,20 @@ breeders_ratio_monthly_check = {
 				is_pop_type = breeders
 				is_employed = no
 			}
-			change_poptype =  pop_type:laborers
+			if = { #优先变自给农
+				limit = {
+					NOT = {
+						any_scope_pop = {
+							is_pop_type = peasants
+							is_employed = no
+						}
+					}
+				}
+				change_poptype =  pop_type:peasants
+			}
+			else = {
+				change_poptype =  pop_type:laborers
+			}
 		}
 	}
 	else = {
@@ -116,6 +129,107 @@ breed_power_monthly_check = {
 			name = breed_ratio_bonus_modifier
 			multiplier = var:state_breed_ratio_bonus
 		}
+	}
+
+	#解决抚育者失业问题
+	b:village_house ?= {
+		if = {
+			limit = { has_modifier = breakout_extra_breeders }
+			remove_modifier = breakout_extra_breeders
+		} 
+		#不要一下子直接变过去，而要慢慢来
+		state = {
+			if = {
+				limit = { exists = var:state_village_house_occupancy }
+				set_variable = {
+					name = state_village_house_occupancy_old
+					value = var:state_village_house_occupancy
+				}
+			}
+			else = {
+				set_variable = {
+					name = state_village_house_occupancy_old
+					value = 0
+				}
+			}
+			set_variable = {
+				name = state_village_house_occupancy
+				value = {
+					value = b:village_house.occupancy
+					add = var:state_village_house_occupancy_old
+					divide = 2
+				}
+			}
+		}
+		add_modifier = {
+			name = breakout_extra_breeders
+			multiplier = var:state_village_house_occupancy
+		} 
+	}
+	#给自给农场也加上类似效果，不同类型的自给，受到的影响程度不一样
+	b:building_subsistence_farms ?= {
+		if = {
+			limit = { has_modifier = breakout_extra_peasants }
+			remove_modifier = breakout_extra_peasants
+		} 
+		add_modifier = {
+			name = breakout_extra_peasants
+			multiplier = {
+				value = b:building_subsistence_farms.occupancy
+			}
+		} 
+	}
+	b:building_subsistence_orchards ?= {
+		if = {
+			limit = { has_modifier = breakout_extra_peasants }
+			remove_modifier = breakout_extra_peasants
+		} 
+		add_modifier = {
+			name = breakout_extra_peasants
+			multiplier = {
+				value = b:building_subsistence_orchards.occupancy
+				multiply = 0.6
+			}
+		} 
+	}
+	b:building_subsistence_pastures ?= {
+		if = {
+			limit = { has_modifier = breakout_extra_peasants }
+			remove_modifier = breakout_extra_peasants
+		} 
+		add_modifier = {
+			name = breakout_extra_peasants
+			multiplier = {
+				value = b:building_subsistence_pastures.occupancy
+				multiply = 1.2
+			}
+		} 
+	}
+	b:building_subsistence_fishing_villages ?= {
+		if = {
+			limit = { has_modifier = breakout_extra_peasants }
+			remove_modifier = breakout_extra_peasants
+		} 
+		add_modifier = {
+			name = breakout_extra_peasants
+			multiplier = {
+				value = b:building_subsistence_fishing_villages.occupancy
+				multiply = 0.3
+			}
+		} 
+	}
+	b:building_subsistence_rice_paddies ?= {
+		if = {
+			limit = { has_modifier = breakout_extra_peasants }
+			remove_modifier = breakout_extra_peasants
+		} 
+		add_modifier = {
+			name = breakout_extra_peasants
+			multiplier = {
+				value = b:building_subsistence_rice_paddies.occupancy
+				multiply = 1.5
+			}
+		} 
 	}
 }
 base_education_access_monthly_check = {

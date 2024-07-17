@@ -1,11 +1,7 @@
 ﻿# This is executed last among all history
 GLOBAL = {
 	every_state = {
-		add_modifier = {
-			name = breakout_breed_initial
-			days = 3
-			is_decaying = yes
-		}
+		
 		save_scope_as = checked_state
 
 		#给予初始社区

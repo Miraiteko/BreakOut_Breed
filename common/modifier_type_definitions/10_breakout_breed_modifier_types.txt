@@ -1,6 +1,6 @@
 ﻿#村居等级
 state_village_house_max_level_add = {
-	decimals=0
+	decimals=1
 	color=good
 	game_data={
 		ai_value=0
@@ -14,7 +14,14 @@ building_group_bg_village_house_employee_mult = {
 		ai_value=0
 	}
 }
-#商品吞吐
+building_group_bg_village_house_throughput_add = {
+	decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
 goods_output_investment_management_add = {
 	decimals=1
 	color=good
@@ -80,6 +87,14 @@ building_employment_breeders_add = {
 		ai_value=0
 	}
 }
+building_employment_breeders_mult = {
+	decimals=0
+	color=neutral
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
 building_breeders_fertility_mult = {
 	decimals=0
 	color=good
@@ -89,6 +104,14 @@ building_breeders_fertility_mult = {
 	}
 }
 building_breeders_mortality_mult = {
+	decimals=0
+	color=bad
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+building_slaves_mortality_mult = {
 	decimals=0
 	color=bad
 	percent=yes
@@ -136,6 +159,15 @@ building_bankers_shares_add = {
 state_bankers_investment_pool_contribution_add={
 	decimals=0
 	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+#自给农
+building_employment_peasants_mult = {
+	decimals=0
+	color=neutral
 	percent=yes
 	game_data={
 		ai_value=0

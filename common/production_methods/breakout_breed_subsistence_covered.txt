@@ -20,10 +20,10 @@
 	}
 	state_modifiers = {		
 		workforce_scaled = {
-			state_village_house_max_level_add = 0.5
+			state_village_house_max_level_add = 0.4
 		}
 		level_scaled = {
-			state_village_house_max_level_add = 0.5
+			state_village_house_max_level_add = 0.4
 		}
 	}
 }
@@ -51,10 +51,10 @@ pm_serfdom = {
 	}
 	state_modifiers = {
 		workforce_scaled = {
-			state_village_house_max_level_add = 0.6
+			state_village_house_max_level_add = 0.5
 		}
 		level_scaled = {
-			state_village_house_max_level_add = 0.6
+			state_village_house_max_level_add = 0.5
 		}
 	}
 }		
@@ -83,10 +83,10 @@ pm_serfdom_building_subsistence_orchards = {
 	}
 	state_modifiers = {
 		workforce_scaled = {
-			state_village_house_max_level_add = 0.6
+			state_village_house_max_level_add = 0.5
 		}
 		level_scaled = {
-			state_village_house_max_level_add = 0.6
+			state_village_house_max_level_add = 0.5
 		}
 	}
 }		
@@ -117,10 +117,10 @@ pm_serfdom_building_subsistence_pastures = {
 	}
 	state_modifiers = {
 		workforce_scaled = {
-			state_village_house_max_level_add = 0.6
+			state_village_house_max_level_add = 0.5
 		}
 		level_scaled = {
-			state_village_house_max_level_add = 0.6
+			state_village_house_max_level_add = 0.5
 		}
 	}
 }
@@ -148,10 +148,10 @@ pm_serfdom_building_subsistence_fishing_villages = {
 	}
 	state_modifiers = {
 		workforce_scaled = {
-			state_village_house_max_level_add = 0.6
+			state_village_house_max_level_add = 0.5
 		}
 		level_scaled = {
-			state_village_house_max_level_add = 0.6
+			state_village_house_max_level_add = 0.5
 		}
 	}
 }		
@@ -180,10 +180,10 @@ pm_serfdom_building_subsistence_rice_paddies = {
 	}
 	state_modifiers = {
 		workforce_scaled = {
-			state_village_house_max_level_add = 0.8
+			state_village_house_max_level_add = 0.6
 		}
 		level_scaled = {
-			state_village_house_max_level_add = 0.8
+			state_village_house_max_level_add = 0.6
 		}
 	}
 }
@@ -210,10 +210,10 @@ pm_homesteading_building_subsistence = {
 	}
 	state_modifiers = {		
 		workforce_scaled = {
-			state_village_house_max_level_add = 0.5
+			state_village_house_max_level_add = 0.4
 		}
 		level_scaled = {
-			state_village_house_max_level_add = 0.5
+			state_village_house_max_level_add = 0.4
 		}
 	}
 }
