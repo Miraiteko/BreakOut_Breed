@@ -54,7 +54,7 @@
 			limit = {
 				is_peasant_under_serfdom = no 
 				wealth > 25
-				literacy > 0.5
+				literacy_rate > 0.5
 			}
 			# baseline: ( wealth - 35 ) / 25 + ( literacy - 0.5 ) * 2 
 			add = {

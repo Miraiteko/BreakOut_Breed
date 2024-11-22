@@ -32,3 +32,9 @@
  building_bankers_shares_add:"$bankers$[Concept('concept_ownership_share', '$concept_ownership_shares$')]"
  building_bankers_shares_add_desc:"对$bankers$[Concept('concept_ownership_share', '$concept_ownership_shares$')]的增益或惩罚"
  POP_BANKERS:"资本的代理人"
+
+ building_employment_bankers_add:"@capitalists!银行家/级"
+ building_employment_bankers_add_desc:"修正建筑每等级可以雇佣的$bankers$数量"
+
+ law_colony_economy:"殖民地经济"
+ law_colony_economy_desc:"对内镇压动乱，进行残酷剥削；对外开放，吸引他国投资。"

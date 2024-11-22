@@ -158,14 +158,6 @@ breed_power_monthly_check = {
 					divide = 2
 				}
 			}
-			if = {
-				limit = { has_modifier = breakout_extra_breeders }
-				remove_modifier = breakout_extra_breeders
-			} 
-			add_modifier = {
-				name = breakout_extra_breeders
-				multiplier = var:state_village_house_occupancy
-			} 
 		}
 		if = {
 			limit = { has_modifier = breakout_extra_breeders }
